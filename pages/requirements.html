@@ -44,20 +44,59 @@
       </nav>
 
       <!--Hero-->
-      <div>
           <div class="container">
-              <h2 class="center">
-                Visual Frontend for Connected Data
-              </h2>
-              <p class="center">
-                The task within this project is to develop a (web-based) graphical user
-                interface for the REST-API which supports developers in exploring the data
-                in a convenient way. It provides a view of objects, their properties and
-                their relations and means to navigate through the graph.
-                It also provides URLs for selected data sets to be incorporated in applications.
-              </p>
+              <table class="striped">
+                  <thead>
+                      <tr>
+                          <th data-field="requirement">Functional Requirements</th>
+                          <th data-field="importance">Importance</th>
+                      </tr>
+                  </thead>
+                  
+                  <tbody>
+                      <tr>
+                          <td>The GUI shall list all classes and properties of the Database.</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>For each class, the GUI shall list all the nodes that belong to this class.</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>For each property, the GUI shall list all the nodes that use that property.</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>For each node in the database, the GUI shall list all the classes the node belongs to and all the properties this node uses.</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>The GUI shall enable the selection of several nodes/classes/properties at the same time.</td>
+                          <td>S</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <table class="striped">
+                  <thead>
+                      <tr>
+                          <th data-field="requirement">Non-Functional Requirements</th>
+                          <th data-field="importance">Importance</th>
+                      </tr>
+                  </thead>
+                  
+                  <tbody>
+                      <tr>
+                          <td>The GUI shall be user friendly.</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>The GUI shall look nice.</td>
+                          <td>S</td>
+                      </tr>
+                </tbody>
+              </table>
+
           </div>
-      </div>
 
       <footer class="page-footer" style="background-color:#3B2884">
         <div class="container">
