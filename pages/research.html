@@ -8,8 +8,9 @@
 
     <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+   <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
 
-   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
    <!-- Compiled and minified JavaScript -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -43,43 +44,77 @@
         </div>
       </nav>
 
-      
+
       <div>
           <h1 class="center">Research</h1>
 
           <div class="container">
-              <h2>RDF</h2>
-
-              <h4>Triplestores</h4>
+              <h4>RDF</h4>
               <p>
-                Entity attribute value model
+                Resource Descriptive Framework (RDF), is a data model and is the W3C standard
+                for data interchange on the web. It is a way of organising data in graph form. </br>
+
+                Data is stored in the form of triples. A triple is a statement of the form
+                subject-predicate-object.<br/>
+
+                RDF also has multiple serialization formats. The way a particular triple is is encoded, depends
+                on the format. Some of the available formats are: Turtle, N-Triples, RDF/XML. RDF/XML was the initial standard
+                but users now prefer to use something like Turtle which is more human friendly.<br/>
+
+                A collection of these triples then represent a directed graph. RDF data can be stored
+                in both relational databases and Triplestores.
               </p>
 
-              <h4>Resource Identification</h4>
+              <p><b>References</b><br/>
+                http://www.dataversity.net/introduction-to-triplestores/
+              </p>
 
           </div>
 
           <div class="container">
-              <h2>Stack</h2>
+              <h4>Stack</h4>
 
-              <h4>Programming Languages and Libraries</h4>
+              <h5>Programming Languages and Libraries</h5>
               <p>
                 What choices were there and what are their strengths and weaknesses?
-                What did you choose and why?
+                We have to build a web based GUI so we had to use Javascript, HTML and CSS.
+                We also looked at Elm but decided to stick with ES6 Javascript as we were familiar with it
+                and had already built projects with it. <br/><br/>
+
+                <b>React</b><br />
+                We decided to choose React to build our UI as the Component system which React is based on,
+                will allow us to reuse most of our code. As the GUI will have similar looking pages for each node,
+                we can use our components to handle these views.<br>
+
+                We looked at Angular as well but ..... React also works better with Redux.
+
               </p>
 
-              <h4>Application Architecture Framework</h4>
               <p>
-                Redux
-              </p>
-
-              <h4>Tool Chain</h4>
+                <b>Redux</b><br>
+                We will be using Redux as our application architecture framework
+                Redux will help us write maintainable code and make our app very scalable.
+                Using Redux will help us test our app easily as it is based
+                on writing pure functions, which will make things easy to reason about.
+                It also provides us with Time travelling debugger which works based on the state tree employed in Redux.
               <p>
-                No server side so didn't have to bother with deployment
-              </p>
-              <h5>Build Tools</h5>
 
-              <h5>Continuocus Integration Tools</h5>
+              </p>
+
+              <h5>Tool Chain</h5>
+              <ul>
+                <li><b>ES6</b> with Babel: This will give us access to new and advanced features in Javascript</li>
+                <li><b>Gulp:</b> for transpiling ES6</li>
+                <li><b>Eslint:</b> for catching errors in our code and so that everyone on the team follows the recommened (Airbnb) style guide for ES6</li>
+                <li><b>Webpack:</b> for bundling our dependencies</li>
+                <li><b>Travis CI:</b> as a continuous integration tool which will run our tests whenever we push our code to Git</li>
+              </ul>
+
+              <p>
+                We only have to build a front end and don't have to write a server.
+                This means we don't have to use continous deployment, but we are still using Travis CI as it will automaticall run our tests
+                and let us know if it is safe to merge our changes from our development branch to the master branch.
+              </p>
          </div>
       </div>
 
@@ -101,7 +136,7 @@
         </div>
         <div class="footer-copyright">
           <div class="container">
-          © 2016 Copyright Text
+          © 2016<li>Eslint for catching errors in our code and so that everyone on the team follows the recommned style guide for ES6</li> Copyright Text
           </div>
         </div>
       </footer>
