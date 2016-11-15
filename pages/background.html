@@ -8,6 +8,7 @@
 
     <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+   <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
 
    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
@@ -42,15 +43,25 @@
         </div>
       </nav>
 
+      <div class="tile">
+        <h1 class="center">Background</h1>
+      </div>
+
     <div class="container">
             <div class="card">
-                <div class="waves-effect waves-block waves-light"></div>
-                <div><img src="../img/bosch.png" width="150px" height="40px"></div>
-                <div class="container">
-                    <span class="center" style="font-family: Courier;">Our project is presented by Bosch, which is a famous german industrial company focus on advanced technologies. Bosch works in "industry 4.0" and each of he devices they work on is represneted in a dynamic, graph-based database in RDF format. And we keep in contact with client by Skype for Business with Daniel Ewert(Bosch) and Steffen Stadtmüller(Bosch) to discuss our project requirements and give us resources.</span>
+                <div class="card-content">
+                  <img src="../img/bosch.png" width="150px" height="40px">
+                    <p>Our project is presented by Bosch,
+                      which is a famous german industrial company focus on advanced technologies.
+                      Bosch works in "industry 4.0" and each of he devices they work on is represneted in a dynamic,
+                      graph-based database in RDF format. And we keep in contact with client by Skype for Business with
+                      Daniel Ewert(Bosch) and Steffen Stadtmüller(Bosch) to discuss our project requirements and give us resources.
+                    </p>
                 </div>
             </div>
+
             <div class="card">
+<<<<<<< HEAD
                 <div class="waves-effect waves-block waves-light"></div>
                 <h4 style="color:#3B2884">Challenges:</h4>
                 <div class="container">
@@ -66,31 +77,41 @@
                     <br class="center" style="font-family: Courier;">3. good communication with client.</br>
                     <br class="center" style="font-family: Courier;">4. be familiar with RDF database.</br>
 
+=======
+                <div class="card-content">
+                    <h5>Challenges:</h5>
+                    <span class="center">Our project aims us to work out a website GUI which will communicate actions and manipulations to an underlying REST API which they have built for us. This API sends SPARQL queries to their RDF database. What the database sends back is converted to JSON. We have to visualise their graph based database, with attributes and relationships, visually so that it becomes easier for developers to understand the database and deduce patterns and relationships. However, RDF triples and the related query language SPARQL are not easily accessible for regular developers.</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h5>Framework for Success</h5>
+                    <ul>
+                      <li>1. Teamwork</li>
+                      <li>2. Deeply understand how does REST API works.</li>
+                      <li>3. Good communication with client.</li>
+                      <li>4. Be familiar with RDF database</li>
+                    <ul>
+>>>>>>> origin/master
                 </div>
             </div>
     </div>
 
-      <footer class="page-footer" style="background-color:#3B2884">
+    <footer class="page-footer" style="background-color:#3B2884">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer</h5>
+            <p class="grey-text text-lighten-4">Need to come up with something here</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer</h5>
-              <p class="grey-text text-lighten-4">Need to come up with something here</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              </ul>
-            </div>
-          </div>
+          COMP204P
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          © 2016 Copyright Text
-          </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
 
     </body>
 </html>
