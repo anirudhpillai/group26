@@ -9,6 +9,7 @@
     <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
    <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
@@ -73,40 +74,39 @@
 
           </div> -->
 
-          <div class="container">
-              <h4>Stack</h4>
+          <div class="container text">
+              <h2>Stack</h2>
 
               <p>
                 What choices were there and what are their strengths and weaknesses?
                 We have to build a web based GUI so we had to use Javascript, HTML and CSS.
                 We also looked at Elm but decided to stick with ES6 Javascript as we were familiar with it
-                and had already built projects with it. <br/><br/>
+                and had already built projects with it.
+              </p>
 
-                <b>React</b><br />
+              <h3>React</h3>
+              <p>
                 We decided to choose React to build our UI as the Component system which React is based on,
                 will allow us to reuse most of our code. As the GUI will have similar looking pages for each node,
                 we can use our components to handle these views.<br>
 
                 We looked at Angular as well but ..... React also works better with Redux.
-
               </p>
-
+              <h3>Redux</h3>
               <p>
-                <b>Redux</b><br>
                 We will be using Redux as our application architecture framework
                 Redux will help us write maintainable code and make our app very scalable.
                 Using Redux will help us test our app easily as it is based
                 on writing pure functions, which will make things easy to reason about.
                 It also provides us with Time travelling debugger which works based on the state tree employed in Redux.
-              <p>
-
               </p>
 
-              <h4>Tool Chain</h4>
-              <ul>
-                <li><b>ES6</b> with Babel: This will give us access to new and advanced features in Javascript</li>
+
+              <h2>Tool Chain</h2>
+              <ul class="slab">
+                <li><b>ES6 with Babel: </b>  This will give us access to new and advanced features in Javascript</li>
                 <li><b>Gulp:</b> for transpiling ES6</li>
-                <li><b>Eslint:</b> for catching errors in our code and so that everyone on the team follows the recommened (Airbnb) style guide for ES6</li>
+                <li><b>Eslint:</b> for catching errors in our code and so that everyone on the team follows the recommended (Airbnb) style guide for ES6</li>
                 <li><b>Webpack:</b> for bundling our dependencies</li>
                 <li><b>Travis CI:</b> as a continuous integration tool which will run our tests whenever we push our code to Git</li>
               </ul>
