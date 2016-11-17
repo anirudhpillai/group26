@@ -1,11 +1,16 @@
 p, .slab {
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
-  color: #212121;
 }
 
 b {
   font-weight: 600;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #3B2884;
 }
 
 h3 {
@@ -35,4 +40,5 @@ h2 {
   font-size: 34px;
   font-weight: bold;
   margin-top: 60px;
+  color: #3B2884;
 }
