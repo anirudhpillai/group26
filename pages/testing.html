@@ -17,12 +17,30 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+       <style>
+           body, html {
+               height: 100%;
+           }
+       
+       .parallax {
+           /* The image used */
+           background-image: url("../img/background.jpg");
+           
+           /* Full height */
+           height: 50%;
+           
+           /* Create the parallax scrolling effect */
+           background-attachment: fixed;
+           background-position: top;
+           background-repeat: no-repeat;
+           background-size: contain;
+       }
+       </style>
 </head>
 <body>
 
       <!--Navigation-->
-      <nav style="background-color:#3B2884">
+      <nav style="background-color:#3B2884; opacity:0.9; position: fixed;">
         <div class="nav-wrapper container">
           <a href="../home.html" class="brand-logo">Group 26</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -45,11 +63,11 @@
         </div>
       </nav>
 
-      <!--Hero-->
-      <div>
-        <div class="tile">
-          <h1 class="center">Testing</h1>
-        </div>
+<div class="parallax"></div>
+<div class="container" style="height:50%">
+    <div style="position: relative; top:50%; left:40%; color:white; font-size:300%; font-weight:bond;">- Testing -</div>
+</div>
+
           <div class="container">
             <h4>Investigation of relevant available testing tools and methods.</h4>
               <p>
