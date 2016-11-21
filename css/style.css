@@ -71,3 +71,10 @@ h2 {
   margin-top: 60px;
   color: #3B2884;
 }
+
+.usecases img {
+  padding: 20px;
+  margin:0 auto;
+  display:block;
+  width: 70%;
+}
