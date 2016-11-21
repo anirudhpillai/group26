@@ -91,7 +91,7 @@
                 will allow us to reuse most of our code. As the GUI will have similar looking pages for each node,
                 we can use our components to handle these views.<br>
 
-                We looked at Angular as well but ..... React also works better with Redux.
+                <!-- We looked at Angular as well but ..... React also works better with Redux. -->
               </p>
               <h3>Redux</h3>
               <p>
@@ -104,17 +104,26 @@
 
 
               <h2>Tool Chain</h2>
-              <ul class="slab">
-                <li><b>ES6 with Babel: </b>  This will give us access to new and advanced features in Javascript</li>
-                <li><b>Gulp:</b> for transpiling ES6</li>
-                <li><b>Eslint:</b> for catching errors in our code and so that everyone on the team follows the recommended (Airbnb) style guide for ES6</li>
-                <li><b>Webpack:</b> for bundling our dependencies</li>
-                <li><b>Travis CI:</b> as a continuous integration tool which will run our tests whenever we push our code to Git</li>
-              </ul>
-
+              <h3>ES6 with Babel</h3>
               <p>
-                We only have to build a front end and don't have to write a server.
-                This means we don't have to use continous deployment, but we are still using Travis CI as it will automatically run our tests
+                This will give us access to new and advanced features in Javascript
+              </p>
+              <h3>Gulp</h3>
+              <p>
+                For transpiling ES6
+              </p>
+              <h3>Eslint</h3>
+              <p>
+                For catching errors in our code and so that everyone on the team follows the recommended (Airbnb) style guide for ES6
+              </p>
+              <h3>Webpack</h3>
+              <p>
+                For bundling our dependencies
+              </p>
+              <h3>Circle CI</h3>
+              <p>
+                As a continuous integration tool which will run our tests whenever we push our code to Git.
+                Although we don't have to use continous deployment, we are still using Circle CI as it will automatically run our tests
                 and let us know if it is safe to merge our changes from our development branch to the master branch.
               </p>
          </div>
