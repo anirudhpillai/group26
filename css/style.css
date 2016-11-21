@@ -1,3 +1,21 @@
+body, html {
+    height: 100%;
+}
+
+.parallax {
+/* The image used */
+background-image: url("../img/background.jpg");
+
+/* Full height */
+height: 50%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: top;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
 p, .slab {
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
