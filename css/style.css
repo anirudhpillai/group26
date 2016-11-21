@@ -16,6 +16,13 @@ background-repeat: no-repeat;
 background-size: contain;
 }
 
+nav {
+  background-color:#3B2884;
+  opacity:0.9;
+  position: fixed;
+  z-index:9999;
+}
+
 p, .slab {
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
