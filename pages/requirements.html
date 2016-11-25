@@ -68,8 +68,8 @@
                 <tbody>
                   <tr>
                     <td>F1</td>
-                    <td>The GUI shall list all classes and properties of the Database.</td>
-                    <td></td>
+                    <td>The GUI shall list all classes in the database</td>
+                    <td>Class</td>
                     <td>Must</td>
                     <td>No</td>
                   </tr>
@@ -77,7 +77,7 @@
                   <tr>
                     <td>F2</td>
                     <td>For each class, the GUI shall list all the nodes that belong to this class.</td>
-                    <td></td>
+                    <td>Class</td>
                     <td>Must</td>
                     <td>No</td>
                   </tr>
@@ -85,25 +85,49 @@
                   <tr>
                     <td>F3</td>
                     <td>For each property, the GUI shall list all the nodes that use that property.</td>
-                    <td></td>
+                    <td>Property</td>
                     <td>Must</td>
                     <td>No</td>
                   </tr>
 
                   <tr>
                     <td>F4</td>
-                    <td>For each node in the database,
-the GUI shall list all the classes the node belongs to and all the properties this node uses.</td>
-                    <td></td>
+                    <td>The GUI shall list all properties in the database</td>
+                    <td>Property</td>
                     <td>Must</td>
                     <td>No</td>
                   </tr>
 
                   <tr>
                     <td>F5</td>
-                    <td>The GUI shall enable the selection of several nodes/classes/properties at the same time.</td>
-                    <td></td>
-                    <td>Should</td>
+                    <td>For each node in the database,
+the GUI shall list all the classes the node belongs to and all the properties this node uses.</td>
+                    <td>Node</td>
+                    <td>Must</td>
+                    <td>No</td>
+                  </tr>
+
+                  <tr>
+                    <td>F6</td>
+                    <td>Shall display all nodes a particular node is connected to.</td>
+                    <td>Node</td>
+                    <td>Shall</td>
+                    <td>No</td>
+                  </tr>
+
+                  <tr>
+                    <td>F7</td>
+                    <td>Way of accessing multiple nodes in the structure (like sub-graphs)</td>
+                    <td>Node</td>
+                    <td>Shall</td>
+                    <td>No</td>
+                  </tr>
+
+                  <tr>
+                    <td>F8</td>
+                    <td>Graphical structure to show you where you are</td>
+                    <td>Navigation</td>
+                    <td>Shall</td>
                     <td>No</td>
                   </tr>
 
@@ -127,7 +151,7 @@ the GUI shall list all the classes the node belongs to and all the properties th
                   <tr>
                     <td>NF1</td>
                     <td>The GUI shall be user friendly.</td>
-                    <td></td>
+                    <td>GUI</td>
                     <td>Should</td>
                     <td>No</td>
                   </tr>
@@ -135,7 +159,23 @@ the GUI shall list all the classes the node belongs to and all the properties th
                   <tr>
                     <td>NF2</td>
                     <td>The GUI shall look nice.</td>
-                    <td></td>
+                    <td>GUI</td>
+                    <td>Should</td>
+                    <td>No</td>
+                  </tr>
+
+                  <tr>
+                    <td>NF3</td>
+                    <td>Prevent the user from getting lost.</td>
+                    <td>GUI</td>
+                    <td>Should</td>
+                    <td>No</td>
+                  </tr>
+
+                  <tr>
+                    <td>NF4</td>
+                    <td>The GUI must provide insights on the data and how it connects to everything.</td>
+                    <td>GUI</td>
                     <td>Should</td>
                     <td>No</td>
                   </tr>
@@ -148,13 +188,6 @@ the GUI shall list all the classes the node belongs to and all the properties th
 
           <div class="container usecases">
             <h2>Use Cases</h2>
-            <img src="../img/1.png"/>
-            <img src="../img/2.png"/>
-            <img src="../img/3.png"/>
-            <img src="../img/4.png"/>
-            <img src="../img/5.png"/>
-            <img src="../img/6.png"/>
-            <img src="../img/7.png"/>
           </div>
 
 
