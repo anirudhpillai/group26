@@ -54,20 +54,37 @@
       </div>
 
       <div class="container text">
-        <h2>Investigation of relevant available testing tools and methods.</h2>
-        <!-- <p>
-          Jest and Mocha
-        </p> -->
-
-        <h2>Comparison of alternatives.</h2>
-        <!-- <p>
-          Jest and Mocha
-        </p> -->
+        <h2>Comparison of alternatives and investigation of relevant available testing tools and methods.</h2>
+        <p>
+          In the end we had to decide between either Jest or Mocha for testing.
+          Jest is a Javascript testing framework created by Facebook, who are also responsible for
+          maintaining Redux and creating React. Moreover, it is also the recommeded testing framework
+          for Redux. <br>
+          While, Mocha is arguably the most popular Javascript testing framework for Node. It is very
+          easy to use and has a lot more documentation and tutorials as it has been around for a really
+          long time. Jest on the other hand is very new just like Redux. <br>
+          We decided to go with Jest as it was created with React and Redux in mind and as it is also
+          the recommended by the Redux community. All the examples in the Redux documentation also
+          use Jest so we believe Jest will be the better option. <br>
+          We will be using Circle CI as our continuous integration tool. We also looked at Travis CI and
+          Jenkins. Travis is only free if your application is open source but we couldn't make our code accessible to
+          the public. Meanwhile, Jenkins takes a lot more effort to set up and offers a lot more options. But, as we
+          didn't need the extra options, we decided to choose Circle CI. <br>
+          Circle CI is free for one project, and also gives us an interface to see our tests running in the container.
+          It also allows us to SSH into the container to fix any problems with the container environment.
+          Although we do not need continuous deployment, Circle CI also allows us to use scripts like Python Fabric
+          to SSH into a remote server and deploy the application.
+        </p>
 
         <h2>How automation can be achieved.</h2>
-        <!-- <p>
-          Automation using CI Tool
-        </p> -->
+        <p>
+          We can set up Circle CI to watch certain branches on our Git project. Whenever we push to a branch watched
+          by Circle CI, it automatically gets the current code from the branch in a container and sets up our
+          environment in the container. After this it runs our test script, which will be set up to run all our tests
+          written in Jest. If all the tests pass, Circle CI will identify that the code in the branch is safe to
+          be deployed or merged to the main branch. If tests don't pass it will alert us and give us details of the failing
+          tests.
+        </p>
       </div>
 
       <footer class="page-footer" style="background-color:#3B2884">
