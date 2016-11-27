@@ -84,3 +84,8 @@ h2 {
   display:block;
   width: 70%;
 }
+
+.table {
+  max-width: 1200px;
+  margin: 0 auto;
+}
