@@ -90,6 +90,6 @@ h2 {
   margin: 0 auto;
 }
 
-td {
-  font-size: 12px;
+.sm td {
+  font-size: 13px;
 }
