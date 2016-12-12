@@ -59,6 +59,11 @@ h5 {
   margin: 0 auto;
 }
 
+.nav-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .tile {
   height: 300px;
   background: #3B2884;
