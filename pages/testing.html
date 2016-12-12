@@ -57,7 +57,8 @@
         <h2>Introduction</h2>
         <p>
           Here, we propose our initial strategy for how to test our system.
-We show how we’ll approach our unit tests, but also our functional and integration tests.
+We show how we’ll approach our unit tests, but also our functional and integration tests. We have also looked at how
+to perform user acceptance testing.
         </p>
 
         <h2>Comparison of alternatives and investigation of relevant available testing tools and methods.</h2>
@@ -65,7 +66,8 @@ We show how we’ll approach our unit tests, but also our functional and integra
           After a lot of research into testing tools for Javascript, we had to decide between either Jest or Mocha for testing.
           Jest is a Javascript testing framework created by Facebook, who are also responsible for
           maintaining Redux and creating React. Moreover, it is also the recommeded testing framework
-          for Redux. <br>
+          for Redux. <br><br>
+
           While, Mocha is arguably the most popular Javascript testing framework for Node. It is very
           easy to use and has a lot more documentation and tutorials as it has been around for a really
           long time. Jest on the other hand is very new just like Redux. <br>
@@ -73,17 +75,34 @@ We show how we’ll approach our unit tests, but also our functional and integra
           the recommended by the Redux community. All the examples in the Redux documentation also
           use Jest so we believe Jest will be the better option. <br>
           Moreover, Jest also allows us to test our code coverage without having to install any additionaly
-          libraries. It has additional features like running tests in parallel to reduce test time.<br>
-          By combining Jest with Enzyme (By Airbnb) we will be able to do not just unit but also functional and
-          integration testing. <br>
+          libraries. It has additional features like running tests in parallel to reduce test time.<br><br>
+
+          Nightwatch.js will allow us to do functional and integration testing. Nightwatch works using the Selenium web drivers
+          and provides a very extensive testing suite. By getting things to run in the browser, Nightwatch allows us
+          to see how our different React and Redux components work together. This will help us do integration and functional testing.<br><br>
+
           We will be using Circle CI as our continuous integration tool. We also looked at Travis CI and
           Jenkins. Travis is only free if your application is open source but we couldn't make our code accessible to
           the public. Meanwhile, Jenkins takes a lot more effort to set up and offers a lot more options. But, as we
-          didn't need the extra options, we decided to choose Circle CI. <br>
+          didn't need the extra options, we decided to choose Circle CI. <br><br>
+
           Circle CI is free for one project, and also gives us an interface to see our tests running in the container.
           It also allows us to SSH into the container to fix any problems with the container environment.
           Although we do not need continuous deployment, Circle CI also allows us to use scripts like Python Fabric
           to SSH into a remote server and deploy the application.
+        </p>
+
+        <h2>User Acceptance Testing</h2>
+        <p>
+          User acceptance tests are conducted to see if the software is what the client expected.
+          It is very important to conduct such tests, because otherwise there might easily be a rift
+          between what the developers do and what the clients think they will get.
+          <br><br>
+          We decided to have UATs at every iteration of our app. Mistakes and misunderstandings would
+          be detected early this way. This also ensures that at each step of our project, the clients
+          know exactly what it will be like, and we know what to do. This gives them the opportunity
+          to be involved and give constructive input, while it gives us valuable information on the
+          project, as well as insight and feedback for future iterations.
         </p>
 
         <h2>How automation can be achieved.</h2>
