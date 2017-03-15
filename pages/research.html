@@ -20,229 +20,210 @@
 </head>
 <body>
 
-      <!--Navigation-->
-      <nav>
-        <div class="nav-wrapper">
-          <a href="../home.html" class="brand-logo">RDF Explorer</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="background.html">Background</a></li>
-            <li><a href="requirements.html">Requirements</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="prototypes.html">Prototypes</a></li>
-            <li><a href="testing.html">Testing</a></li>
-            <li><a href="experiments.html">Experiment Log</a></li>
-            <li><a href="reports.html">Reports& Links</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="background.html">Background</a></li>
-            <li><a href="requirements.html">Requirements</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="prototypes.html">Prototypes</a></li>
-            <li><a href="testing.html">Testing</a></li>
-            <li><a href="experiments.html">Experiment Log</a></li>
-            <li><a href="reports.html">Reports & Links</a></li>
-          </ul>
+  <div class="wrapper">
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+              <i class="material-icons">menu</i>
+            </a>
+            <a class="brand-logo center">Research</a>
+          </div>
         </div>
       </nav>
-
-
-      <div class="parallax"></div>
-      <div class="container" style="height:50%">
-          <div style="position: relative; top:50%; left:30%; width: 40%; color:white; font-size:300%; font-weight:bold;" align="center">
-            Research
+      <ul id="slide-out" class="side-nav fixed">
+        <li>
+          <div class="userView">
+            <a href="../home.html"><h4>RDF Explorer</h4></a>
           </div>
-      </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a href="requirements.html">Requirements</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="prototypes.html">Prototypes</a></li>
+        <li><a href="experiments.html">Experiment Log</a></li>
+        <li><a href="development.html">Development</a></li>
+        <li><a href=""testing.html>Testing</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="product.html">Final Product</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="reports.html">Reports & Links</a></li>
+        <li><div class="divider"></div></li>
+      </ul>
+    </header>
 
-          <div class="container text">
-              <h2>Introduction</h2>
-              <p>
-                This page compiles the result of our research.
+    <div class="main text">
+      <h2>Introduction</h2>
+      <p>
+        This page compiles the result of our research.
 Here you can see some of our research on existing technology, what decisions we took after our research,
 what our stack is (and why). Finally, we present the results of an HCI analysis of the application.
-              </p>
+      </p>
 
-              <h2>RDF</h2>
-              <p>
-                Resource Descriptive Framework (RDF), is a data model and is the W3C standard
-                for data interchange on the web. It is a way of organising data in graph form. </br>
+      <h2>RDF</h2>
+      <p>
+        Resource Descriptive Framework (RDF), is a data model and is the W3C standard
+        for data interchange on the web. It is a way of organising data in graph form. </br>
 
-                Data is stored in the form of triples. A triple is a statement of the form
-                subject-predicate-object.<br/>
+        Data is stored in the form of triples. A triple is a statement of the form
+        subject-predicate-object.<br/>
 
-                RDF also has multiple serialization formats. The way a particular triple is is encoded, depends
-                on the format. Some of the available formats are: Turtle, N-Triples, RDF/XML. RDF/XML was the initial standard
-                but users now prefer to use something like Turtle which is more human friendly.<br/>
+        RDF also has multiple serialization formats. The way a particular triple is is encoded, depends
+        on the format. Some of the available formats are: Turtle, N-Triples, RDF/XML. RDF/XML was the initial standard
+        but users now prefer to use something like Turtle which is more human friendly.<br/>
 
-                A collection of these triples then represent a directed graph. RDF data can be stored
-                in both relational databases and Triplestores.
-              </p>
-
-              <h2>Research on existing implementations and alternatives</h2>
-              <p>
-                What is neo4j?<br>
-                Neo4j is a NoSQL graph database. The data is stored in nodes, that can have
-                some set of properties, and links between those nodes, that describe how they relate to each other.<br><br>
-
-                Why we looked at neo4j?<br>
-                We used neo4j because we wanted to have a better understanding of how graph
-                databases differed from traditional relational databases (mySQL/SQL).
-                Neo4j also has the biggest community of developers among graph database
-                systems, which means getting help is easy.<br><br>
-
-                How we learned<br>
-
-                Neo4j has an in-browser user interface that one can use to query
-                database with a special language, Cypher (the traditional equivalent
-                of the Cypher language is SQL). It shows the query results graphically.
-                We learnt how to use Neo4j with the help of this user interface, and the
-                tutorials and documentation available on the official website.<br><br>
-
-                How it helped us for this project<br>
-
-                It helped us a lot to make sense of what is involved in this project.
-                Having experience with a graph database helped us grasp the challenges
-                faced by our application. The fact that we could actually see the results
-                of our queries gave us a deeper understanding of what can be achieved
-                with graphs. It was a friendly introduction to graph databases before
-                moving on to RDF/SPARQL tutorials.
-              </p>
-          </div>
-
-          <HR width="80%" color=#987cb9 SIZE=1>
-
-          <div class="container text">
-              <h2>Stack</h2>
-
-              <p>
-                We have to build a web based GUI so we had to use Javascript, HTML and CSS.
-                We also looked at Elm but decided to stick with ES6 Javascript as we were familiar with it
-                and had already built projects with it.
-              </p>
-
-              <h3>React</h3>
-              <p>
-                We decided to choose React to build our UI as the Component system which React is based on,
-                will allow us to reuse most of our code. As the GUI will have similar looking pages for each node,
-                we can use our components to handle these views.<br>
-
-                <!-- We looked at Angular as well but ..... React also works better with Redux. -->
-              </p>
-              <h3>Redux</h3>
-              <p>
-                We will be using Redux as our application architecture framework
-                Redux will help us write maintainable code and make our app very scalable.
-                Using Redux will help us test our app easily as it is based
-                on writing pure functions, which will make things easy to reason about.
-                It also provides us with Time travelling debugger which works based on the state tree employed in Redux.
-              </p>
-
-              <h2>Tool Chain</h2>
-              <h3>ES6 with Babel</h3>
-              <p>
-                This will give us access to new and advanced features in Javascript
-              </p>
-              <h3>Gulp</h3>
-              <p>
-                For transpiling ES6
-              </p>
-              <h3>Eslint</h3>
-              <p>
-                For catching errors in our code and so that everyone on the team follows the recommended (Airbnb) style guide for ES6
-              </p>
-              <h3>Webpack</h3>
-              <p>
-                For bundling our dependencies
-              </p>
-              <h3>Circle CI</h3>
-              <p>
-                As a continuous integration tool which will run our tests whenever we push our code to Git.
-                Although we don't have to use continous deployment, we are still using Circle CI as it will automatically run our tests
-                and let us know if it is safe to merge our changes from our development branch to the master branch.
-              </p>
+        A collection of these triples then represent a directed graph. RDF data can be stored
+        in both relational databases and Triplestores.
+      </p>
 
 
-              <p><b>References</b><br/>
+      <h2>Stack</h2>
 
-                Sparql:<br/>
-                https://jena.apache.org/tutorials/sparql.html<br/>
-                https://en.wikipedia.org/wiki/SPARQL<br/>
-                https://www.w3.org/2009/Talks/0615-qbe/<br/>
-                http://www.linkeddatatools.com/querying-semantic-data <br/><br/>
+      <p>
+        We have to build a web based GUI so we had to use Javascript, HTML and CSS.
+        We also looked at Elm but decided to stick with ES6 Javascript as we were familiar with it
+        and had already built projects with it.
+      </p>
 
-                RDF:<br/>
-                https://en.wikipedia.org/wiki/Resource_Description_Framework<br/>
-                http://www.linkeddatatools.com/introducing-rdf<br/>
-                http://www.linkeddatatools.com/introducing-rdf-part-2<br/>
-                http://www.linkeddatatools.com/semantic-modeling<br/>
-                http://www.linkeddatatools.com/introducing-rdfs-owl <br/><br/>
-                http://www.dataversity.net/introduction-to-triplestores/ <br/>
+      <h3>React</h3>
+      <p>
+        We decided to choose React to build our UI as the Component system which React is based on,
+        will allow us to reuse most of our code. As the GUI will have similar looking pages for each node,
+        we can use our components to handle these views.<br>
 
-                Graph Databases: <br/>
-                https://neo4j.com/why-graph-databases/ <br/>
-                https://neo4j.com/developer/graph-db-vs-rdbms/ <br/><br/>
+        <!-- We looked at Angular as well but ..... React also works better with Redux. -->
+      </p>
+      <h3>Redux</h3>
+      <p>
+        We will be using Redux as our application architecture framework
+        Redux will help us write maintainable code and make our app very scalable.
+        Using Redux will help us test our app easily as it is based
+        on writing pure functions, which will make things easy to reason about.
+        It also provides us with Time travelling debugger which works based on the state tree employed in Redux.
+      </p>
 
-                Neo4j:<br/>
-                https://neo4j.com/blog/query-cypher-data-relationships/ <br/>
-                https://neo4j.com/docs/ <br/>
+      <h2>Tool Chain</h2>
+      <h3>ES6 with Babel</h3>
+      <p>
+        This will give us access to new and advanced features in Javascript
+      </p>
+      <h3>Gulp</h3>
+      <p>
+        For transpiling ES6
+      </p>
+      <h3>Eslint</h3>
+      <p>
+        For catching errors in our code and so that everyone on the team follows the recommended (Airbnb) style guide for ES6
+      </p>
+      <h3>Webpack</h3>
+      <p>
+        For bundling our dependencies
+      </p>
+      <h3>Circle CI</h3>
+      <p>
+        As a continuous integration tool which will run our tests whenever we push our code to Git.
+        Although we don't have to use continous deployment, we are still using Circle CI as it will automatically run our tests
+        and let us know if it is safe to merge our changes from our development branch to the master branch.
+      </p>
 
-                for nodeJS: <br/>
 
-                https://www.airpair.com/javascript/node-js-tutorial <br/>
-                http://blog.modulus.io/absolute-beginners-guide-to-nodejs <br/>
-                https://nodejs.org/en/docs/ <br/><br/>
+      <p><b>References</b><br/>
 
-                React: <br/>
-                https://facebook.github.io/react/tutorial/tutorial.html<br/>
-                https://scotch.io/tutorials/learning-react-getting-started-and-concepts<br/>
-                https://www.tutorialspoint.com/reactjs/<br/>
-                http://andrewhfarmer.com/getting-started-tutorials/<br/>
-                https://blog.risingstack.com/the-react-way-getting-started-tutorial/<br/>
-              </p>
-         </div>
-      </div>
+        Sparql:<br/>
+        https://jena.apache.org/tutorials/sparql.html<br/>
+        https://en.wikipedia.org/wiki/SPARQL<br/>
+        https://www.w3.org/2009/Talks/0615-qbe/<br/>
+        http://www.linkeddatatools.com/querying-semantic-data <br/><br/>
 
-    <HR width="80%" color=#987cb9 SIZE=1>
+        RDF:<br/>
+        https://en.wikipedia.org/wiki/Resource_Description_Framework<br/>
+        http://www.linkeddatatools.com/introducing-rdf<br/>
+        http://www.linkeddatatools.com/introducing-rdf-part-2<br/>
+        http://www.linkeddatatools.com/semantic-modeling<br/>
+        http://www.linkeddatatools.com/introducing-rdfs-owl <br/><br/>
+        http://www.dataversity.net/introduction-to-triplestores/ <br/>
 
-      <div class="container HCIAnalysis">
-          <h2>HCI Analysis</h2>
-          <p>
-          For the convenience of users that using our web application, we must guide them through each page and making the web application easy to use. This is also one of requirements from the client. Therefore we will use our human computer interaction knowledge to create an expected engineer to show how our application works and how we can improve our application.
-          </p>
-          <h3>Engineer:</h3>
-          <p>
-          John, A 25 years old engineer, he works in Bosch now. He has a lot of development experience.
-          </p>
-          <h3>Scenario:</h3>
-          <p>
-          John is an engineer who works in Bosch and he tries to find the relationship of one particular node with others nodes. Then he uses the old application in his computer to find the special node. He opens the application and clicks the database that includes this node. Then he chooses the class that includes this node and then he clicks this node. However, the node information is not enough. John cannot find nodes that are related to this node and classes that the node belongs to. Moreover, John don’t remember what is the path that he clicks into the node and it confuses him.
-          After that, he hears that there is a new website application created by some students in UCL. He enters this application and repeats these motions that he did in the old application.
-          He finds the new application has a navigation bar to show where he is at real time and the navigation bar shows the path from the home page to the current page.
-          In the node page, John can clearly find relative nodes information and the node page lists all classes that the node belongs to.
-          The new application exactly meets the demand of John.
+        Graph Databases: <br/>
+        https://neo4j.com/why-graph-databases/ <br/>
+        https://neo4j.com/developer/graph-db-vs-rdbms/ <br/><br/>
+
+        Neo4j:<br/>
+        https://neo4j.com/blog/query-cypher-data-relationships/ <br/>
+        https://neo4j.com/docs/ <br/>
+
+        for nodeJS: <br/>
+
+        https://www.airpair.com/javascript/node-js-tutorial <br/>
+        http://blog.modulus.io/absolute-beginners-guide-to-nodejs <br/>
+        https://nodejs.org/en/docs/ <br/><br/>
+
+        React: <br/>
+        https://facebook.github.io/react/tutorial/tutorial.html<br/>
+        https://scotch.io/tutorials/learning-react-getting-started-and-concepts<br/>
+        https://www.tutorialspoint.com/reactjs/<br/>
+        http://andrewhfarmer.com/getting-started-tutorials/<br/>
+        https://blog.risingstack.com/the-react-way-getting-started-tutorial/<br/>
+      </p>
+
+
+      <h2>Research on existing implementations and alternatives</h2>
+      <p>
+        What is neo4j?<br>
+        Neo4j is a NoSQL graph database. The data is stored in nodes, that can have
+        some set of properties, and links between those nodes, that describe how they relate to each other.<br><br>
+
+        Why we looked at neo4j?<br>
+        We used neo4j because we wanted to have a better understanding of how graph
+        databases differed from traditional relational databases (mySQL/SQL).
+        Neo4j also has the biggest community of developers among graph database
+        systems, which means getting help is easy.<br><br>
+
+        How we learned<br>
+
+        Neo4j has an in-browser user interface that one can use to query
+        database with a special language, Cypher (the traditional equivalent
+        of the Cypher language is SQL). It shows the query results graphically.
+        We learnt how to use Neo4j with the help of this user interface, and the
+        tutorials and documentation available on the official website.<br><br>
+
+        How it helped us for this project<br>
+
+        It helped us a lot to make sense of what is involved in this project.
+        Having experience with a graph database helped us grasp the challenges
+        faced by our application. The fact that we could actually see the results
+        of our queries gave us a deeper understanding of what can be achieved
+        with graphs. It was a friendly introduction to graph databases before
+        moving on to RDF/SPARQL tutorials.
+      </p>
+
+        <h2>HCI Analysis</h2>
+        <p>
+        For the convenience of users that using our web application, we must guide them through each page and making the web application easy to use. This is also one of requirements from the client. Therefore we will use our human computer interaction knowledge to create an expected engineer to show how our application works and how we can improve our application.
         </p>
-        <h3>HCI Considerations:</h3>
-       <p>
+        <h3>Engineer:</h3>
+        <p>
+        John, A 25 years old engineer, he works in Bosch now. He has a lot of development experience.
+        </p>
+        <h3>Scenario:</h3>
+        <p>
+        John is an engineer who works in Bosch and he tries to find the relationship of one particular node with others nodes. Then he uses the old application in his computer to find the special node. He opens the application and clicks the database that includes this node. Then he chooses the class that includes this node and then he clicks this node. However, the node information is not enough. John cannot find nodes that are related to this node and classes that the node belongs to. Moreover, John don’t remember what is the path that he clicks into the node and it confuses him.
+        After that, he hears that there is a new website application created by some students in UCL. He enters this application and repeats these motions that he did in the old application.
+        He finds the new application has a navigation bar to show where he is at real time and the navigation bar shows the path from the home page to the current page.
+        In the node page, John can clearly find relative nodes information and the node page lists all classes that the node belongs to.
+        The new application exactly meets the demand of John.
+      </p>
+      <h3>HCI Considerations:</h3>
+      <p>
         Breadcrumbs trail (navigation bar): Our client has requested that the system must show users where he is and the path from the home page to the current page. The main feature from which that we will use is the navigation bar at the top of the page. This shows a directory tree of pages above the current one. For example, it could show Home > Database3 > Class 1 > Node 13 > Property 5.
-        </p>
+      </p>
+    </div>
 
-      </div>
-
-      <footer class="page-footer" style="background-color:#3B2884">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Systems Engineering</h5>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-            COMP204P
-          </div>
-        </div>
-      </footer>
-
+    <footer>COMP204P - Systems Engineering</footer>
+  </div>
       <script type="text/javascript">
         $(document).ready(function(){
           $(".button-collapse").sideNav();

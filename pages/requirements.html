@@ -20,207 +20,197 @@
 </head>
 <body>
 
-      <!--Navigation-->
-      <nav>
-        <div class="nav-wrapper">
-          <a href="../home.html" class="brand-logo">RDF Explorer</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="background.html">Background</a></li>
-            <li><a href="requirements.html">Requirements</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="prototypes.html">Prototypes</a></li>
-            <li><a href="testing.html">Testing</a></li>
-            <li><a href="experiments.html">Experiment Log</a></li>
-            <li><a href="reports.html">Reports & Links</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="background.html">Background</a></li>
-            <li><a href="requirements.html">Requirements</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="prototypes.html">Prototypes</a></li>
-            <li><a href="testing.html">Testing</a></li>
-            <li><a href="experiments.html">Experiment Log</a></li>
-            <li><a href="reports.html">Reports & Links</a></li>
-          </ul>
+  <div class="wrapper">
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+              <i class="material-icons">menu</i>
+            </a>
+            <a class="brand-logo center">Requirements</a>
+          </div>
         </div>
       </nav>
-
-      <div class="parallax"></div>
-      <div class="container" style="height:50%">
-          <div style="position: relative; top:50%; left:30%; width: 40%; color:white; font-size:300%; font-weight:bold;" align="center">
-            Requirements
+      <ul id="slide-out" class="side-nav fixed">
+        <li>
+          <div class="userView">
+            <a href="../home.html"><h4>RDF Explorer</h4></a>
           </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a href="requirements.html">Requirements</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="prototypes.html">Prototypes</a></li>
+        <li><a href="experiments.html">Experiment Log</a></li>
+        <li><a href="development.html">Development</a></li>
+        <li><a href=""testing.html>Testing</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="product.html">Final Product</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="reports.html">Reports & Links</a></li>
+        <li><div class="divider"></div></li>
+      </ul>
+    </header>
+
+    <div class="main">
+      <h2>Requirements</h2>
+      <h5>Functional Requirements</h5>
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">ID</th>
+              <th data-field="name">Requirement</th>
+              <th data-field="name">Category</th>
+              <th data-field="name">Priority</th>
+              <th data-field="name">Completed</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>F1</td>
+            <td>The GUI shall list all classes in the database</td>
+            <td>Class</td>
+            <td>Must</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F2</td>
+            <td>For each class, the GUI shall list all the nodes that belong to this class</td>
+            <td>Class</td>
+            <td>Must</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F3</td>
+            <td>For each property, the GUI shall list all the nodes that use that property</td>
+            <td>Property</td>
+            <td>Must</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F4</td>
+            <td>The GUI shall list all properties in the database</td>
+            <td>Property</td>
+            <td>Must</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F5</td>
+            <td>The GUI shall list all properties in the database</td>
+            <td>Property</td>
+            <td>Must</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F6</td>
+            <td>A user shall be able to select multiple properties that interest him</td>
+            <td>Propery</td>
+            <td>Shall</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F7</td>
+            <td>Shall display all nodes a particular node is connected to</td>
+            <td>Node</td>
+            <td>Shall</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F8</td>
+            <td>Way of accessing multiple nodes in the structure (like sub-graphs)</td>
+            <td>Node</td>
+            <td>Shall</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>F9</td>
+            <td>Graphical structure to show you where you are</td>
+            <td>Navigation</td>
+            <td>Shall</td>
+            <td>No</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <h5>Non-Functional Requirements</h5>
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">ID</th>
+              <th data-field="name">Requirement</th>
+              <th data-field="name">Category</th>
+              <th data-field="name">Priority</th>
+              <th data-field="name">Completed</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>NF1</td>
+            <td>The GUI shall be user friendly</td>
+            <td>GUI</td>
+            <td>Should</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>NF2</td>
+            <td>The GUI shall look nice</td>
+            <td>GUI</td>
+            <td>Should</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>NF3</td>
+            <td>Prevent the user from getting lost</td>
+            <td>GUI</td>
+            <td>Should</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>NF4</td>
+            <td>The GUI must provide insights on the data and how it connects to everything</td>
+            <td>GUI</td>
+            <td>Should</td>
+            <td>No</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="usecases">
+        <h2>Use Cases</h2>
+        <img src="../img/1.png" style="height:50%; width:50%"/>
+        <img src="../img/2.png"/>
+        <img src="../img/3.png"/>
+        <img src="../img/4.png"/>
+        <img src="../img/5.png"/>
+        <img src="../img/6.png"/>
+        <img src="../img/7.png"/>
+        <img src="../img/8.png"/>
       </div>
 
-          <div class="container">
-              <h2>Requirements</h2>
-              <h5>Functional Requirements</h5>
-              <table class="striped">
-                <thead>
-                  <tr>
-                      <th data-field="id">ID</th>
-                      <th data-field="name">Requirement</th>
-                      <th data-field="name">Category</th>
-                      <th data-field="name">Priority</th>
-                      <th data-field="name">Completed</th>
-                  </tr>
-                </thead>
 
-                <tbody>
-                  <tr>
-                    <td>F1</td>
-                    <td>The GUI shall list all classes in the database</td>
-                    <td>Class</td>
-                    <td>Must</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F2</td>
-                    <td>For each class, the GUI shall list all the nodes that belong to this class</td>
-                    <td>Class</td>
-                    <td>Must</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F3</td>
-                    <td>For each property, the GUI shall list all the nodes that use that property</td>
-                    <td>Property</td>
-                    <td>Must</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F4</td>
-                    <td>The GUI shall list all properties in the database</td>
-                    <td>Property</td>
-                    <td>Must</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F5</td>
-                    <td>The GUI shall list all properties in the database</td>
-                    <td>Property</td>
-                    <td>Must</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F6</td>
-                    <td>A user shall be able to select multiple properties that interest him</td>
-                    <td>Propery</td>
-                    <td>Shall</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F7</td>
-                    <td>Shall display all nodes a particular node is connected to</td>
-                    <td>Node</td>
-                    <td>Shall</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F8</td>
-                    <td>Way of accessing multiple nodes in the structure (like sub-graphs)</td>
-                    <td>Node</td>
-                    <td>Shall</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>F9</td>
-                    <td>Graphical structure to show you where you are</td>
-                    <td>Navigation</td>
-                    <td>Shall</td>
-                    <td>No</td>
-                  </tr>
-
-                </tbody>
-              </table>
-
-
-              <h5>Non-Functional Requirements</h5>
-              <table class="striped">
-                <thead>
-                  <tr>
-                      <th data-field="id">ID</th>
-                      <th data-field="name">Requirement</th>
-                      <th data-field="name">Category</th>
-                      <th data-field="name">Priority</th>
-                      <th data-field="name">Completed</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>NF1</td>
-                    <td>The GUI shall be user friendly</td>
-                    <td>GUI</td>
-                    <td>Should</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>NF2</td>
-                    <td>The GUI shall look nice</td>
-                    <td>GUI</td>
-                    <td>Should</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>NF3</td>
-                    <td>Prevent the user from getting lost</td>
-                    <td>GUI</td>
-                    <td>Should</td>
-                    <td>No</td>
-                  </tr>
-
-                  <tr>
-                    <td>NF4</td>
-                    <td>The GUI must provide insights on the data and how it connects to everything</td>
-                    <td>GUI</td>
-                    <td>Should</td>
-                    <td>No</td>
-                  </tr>
-
-                </tbody>
-              </table>
-          </div>
-
-
-          <div class="container usecases">
-            <h2>Use Cases</h2>
-            <img src="../img/1.png" style="height:50%; width:50%"/>
-            <img src="../img/2.png"/>
-            <img src="../img/3.png"/>
-            <img src="../img/4.png"/>
-            <img src="../img/5.png"/>
-            <img src="../img/6.png"/>
-            <img src="../img/7.png"/>
-            <img src="../img/8.png"/>
-          </div>
-
-
-      <footer class="page-footer" style="background-color:#3B2884">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Systems Engineering</h5>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-            COMP204P
-          </div>
-        </div>
-      </footer>
+    </div>
+    <footer>COMP204P - Systems Engineering</footer>
+  </div>
 
       <script type="text/javascript">
         $(document).ready(function(){
