@@ -2,8 +2,22 @@ body, html {
     height: 100%;
 }
 
-.parallax {
-/* The image used */
+nav {
+  background: #3B2884;
+}
+
+
+.wrapper {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  .wrapper {
+    padding-left: 0;
+  }
+}
+
+.bg {
 background-image: url("../img/background.jpg");
 
 /* Full height */
@@ -14,13 +28,6 @@ background-attachment: fixed;
 background-position: top;
 background-repeat: no-repeat;
 background-size: contain;
-}
-
-nav {
-  background-color:#3B2884;
-  opacity:0.9;
-  position: fixed;
-  z-index:9999;
 }
 
 p, .slab {
@@ -57,11 +64,6 @@ h5 {
 .text {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.nav-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .tile {

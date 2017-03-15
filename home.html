@@ -20,37 +20,44 @@
 <body>
 
       <!--Navigation-->
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">RDF Explorer</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="pages/background.html">Background</a></li>
-            <li><a href="pages/requirements.html">Requirements</a></li>
-            <li><a href="pages/research.html">Research</a></li>
-            <li><a href="pages/prototypes.html">Prototypes</a></li>
-            <li><a href="pages/testing.html">Testing</a></li>
-            <li><a href="pages/experiments.html">Experiment Log</a></li>
-            <li><a href="pages/reports.html">Reports & Links</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="pages/background.html">Background</a></li>
-            <li><a href="pages/requirements.html">Requirements</a></li>
-            <li><a href="pages/research.html">Research</a></li>
-            <li><a href="pages/prototypes.html">Prototypes</a></li>
-            <li><a href=""pages/testing.html>Testing</a></li>
-            <li><a href="pages/experiments.html">Experiment Log</a></li>
-            <li><a href="pages/reports.html">Reports & Links</a></li>
-          </ul>
-        </div>
-      </nav>
 
-      <div class="parallax"></div>
-      <div class="container" style="height:50%">
-          <div style="position: relative; top:50%; left:30%; width: 40%; color:white; font-size:400%; font-weight:bold;" align="center">
-            Group 26
+
+    <div class="wrapper">
+      <header>
+        <nav class="top-nav">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+                <i class="material-icons">menu</i>
+              </a>
+              <a class="brand-logo center">Group 26</a>
+            </div>
           </div>
-      </div>
+        </nav>
+        <ul id="slide-out" class="side-nav fixed">
+          <li>
+            <div class="userView">
+              <h4><span>RDF Explorer</h4>
+            </div>
+          </li>
+          <li><div class="divider"></div></li>
+          <li><a href="pages/background.html">Background</a></li>
+          <li><a href="pages/requirements.html">Requirements</a></li>
+          <li><a href="pages/research.html">Research</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="pages/prototypes.html">Prototypes</a></li>
+          <li><a href="pages/experiments.html">Experiment Log</a></li>
+          <li><a href="pages/development.html">Development</a></li>
+          <li><a href=""pages/testing.html>Testing</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="pages/product.html">Final Product</a></li>
+          <li><a href="pages/architecture.html">Architecture</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="pages/documentation.html">Documentation</a></li>
+          <li><a href="pages/reports.html">Reports & Links</a></li>
+          <li><div class="divider"></div></li>
+        </ul>
+      </header>
 
         <div class="container">
               <h1 class="center">Visual Frontend for Connected Data</h1>
@@ -132,6 +139,9 @@
           </div>
         </div>
       </footer>
+    </div>
+
+
 
     <script type="text/javascript">
       $(document).ready(function(){
