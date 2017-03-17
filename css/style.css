@@ -6,6 +6,10 @@ nav {
   background: #3B2884;
 }
 
+.userView h4 {
+  color: #3B2884;
+}
+
 footer {
   padding: 20px;
   background-color:#3B2884;
