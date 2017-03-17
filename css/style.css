@@ -6,6 +6,11 @@ nav {
   background: #3B2884;
 }
 
+.space-top {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
 .userView h4 {
   color: #3B2884;
 }
