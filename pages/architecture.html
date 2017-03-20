@@ -58,15 +58,38 @@
     <div class="main text">
 
       <h2>Design Patterns</h2>
-      <h4>Title</h4>
+      <h4>Dependency Injection</h4>
       <h4>Title</h4>
 
 
       <h2>Architecture</h2>
-      <h4>Title</h4>
-      <h4>Title</h4>
+      <h4>React: Composition vs Inheritance</h4>
+      <p>
+        As React has a very powerful composition model, Facebook (creators of React)
+        recommend to use Composition over Inheritance to reuse code between components.
+      </p>
 
+      <p>
+        In our project we had two similar list views as two different components (InstanceList and ClassList).
+        There was a lot of similar code in both the components as both were basically just list view showing
+        different items. We initially thought of creating a abstract class for a List View but after reading
+        the React documentation and recommendations we decided to go for composition over inheritance.
+        <i>'Favour composition over inheritance'</i> &nbsp; is also a design principle in
+        Head First Design Patterns book.
+      </p>
 
+      <p>
+        So we used a separate Table component which had all the necessary code for the list view and then added
+        this table component in both of our list views. Hence, avoiding duplication and promoting code reuse.
+      </p>
+
+      <h2>References</h2>
+      <p>
+        https://facebook.github.io/react/docs/composition-vs-inheritance.html
+      </p>
+      <p>
+        Head First Design Patterns
+      </p>
     </div>
 
     <footer>COMP204P - Systems Engineering - Group 26</footer>
