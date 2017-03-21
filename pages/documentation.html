@@ -58,9 +58,146 @@
     <div class="main text">
 
       <h2>Project Documentation</h2>
+
+      <h4><a id="Develop_and_Contribute_0"></a>Develop and Contribute</h4>
+      <p>This file helps you get up to date with the project by explaining how the code works, where to go to add/modify specific features etc…<br>
+      We assume the prerequisites are already met.<br>
+      Refer to <a href="http://README.md">README.md</a> to know how to have a local working copy of the project if not already.</p>
+      <h4><a id="Set_up_6"></a>Set up</h4>
+      <ol>
+      <li>Clone the Project</li>
+      <li>Run <code>npm install</code></li>
+      <li>The GUI currently fetches the data from the deployed API with the test database.<br>
+      To change the URL for the API, go to <code>client/js/constants.js</code> and change the APIURL variable.</li>
+      <li>Run <code>npm start</code>, which will start the GUI on port 3000. To change the port, you can edit, <code>devServer.js</code>.</li>
+      </ol>
+      <h4><a id="Bundling_13"></a>Bundling</h4>
+      <p>Install <code>webpack</code> globally using <code>sudo npm install -g webpack</code>.</p>
+      <p>Then run <code>sh build.sh</code> to create a dist folder and a <code>bundle.js</code> file which contains the transpiled<br>
+      React code.</p>
+      <h4><a id="Built_With_19"></a>Built With</h4>
+      <p>The main technologies used to build this are React and D3.js</p>
+      <h4><a id="Testing_22"></a>Testing</h4>
+      <p>Once you contributed, added or modified something, you can test your changes.<br>
+      The command <code>npm test</code> will run a test suite with <em>Jest</em>.</p>
+      <p><em>Note:</em> We use <a href="https://github.com/AllenFang/react-bootstrap-table">react-bootstrap-table</a> for our tables and our filter, that have been tested already.</p>
+      <h4><a id="Project_Structure_29"></a>Project Structure</h4>
+      <p>This is our project’s structure:</p>
+      <pre><code>├── build.sh
+      ├── devServer.js
+      ├── webpack.config.dev.js
+      ├── webpack.config.prod.js
+      ├── package.json
+      ├── node_modules
+      ├── test
+      |   └── load_test.py
+      └── client
+          ├── app.js
+          ├── css
+          |   └── style.css
+          ├── js
+          |   └── constants.js
+          └── components
+              ├── Main.js
+              ├── Header.js
+              ├── Breadcrumbs.js
+              ├── ClassList.js
+              ├── InstanceList.js
+              ├── Instance.js
+              ├── LinkedInstancesTable.js
+              ├── LinkedValuesTable.js
+              ├── InfoBar.js
+              └── Links.js
+      </code></pre>
+      <h4><a id="The_Source_Code_63"></a>The Source Code</h4>
+      <ul>
+      <li><em><a href="http://build.sh">build.sh</a></em> is ran when building the project</li>
+      <li><em>devServer.js</em> is the first file that runs when calling <code>npm start</code></li>
+      <li><em>webpack.config.dev.js</em> and <em>webpack.config.prod.js</em> are fed to WebPack (when the app is in development or production respectively). They are configuration files.</li>
+      <li><em>package.json</em> contains meta-data about our app. It includes a list of dependencies that are installed when running <code>npm install</code></li>
+      <li><strong>node_modules</strong> contains all the dependencies and modules used by the App</li>
+      <li><strong>test</strong>
+      <ul>
+      <li><em>load_test.py</em> creates a server at port 5000, with an arbitrary number of RDF entities (ie: a million), to perform load testing and see how our GUI reacts to huge datasets</li>
+      </ul>
+      </li>
+      <li><strong>client</strong>
+      <ul>
+      <li><em>app.js</em></li>
+      <li><strong>components</strong> contains all our React components
+      <ul>
+      <li><em>Main.js</em> is the main component in which everything happens</li>
+      <li><em>Header.js</em> manages the header</li>
+      <li><em>Breadcrumbs.js</em> manages the breadcrumbs</li>
+      <li><em>ClassList.js</em> shows the list of all classes (it’s the first page that is shown)</li>
+      <li><em>InstanceList.js</em> shows the list of all instances of a certain class (when you click on a class in <em>ClassList.js</em> for example)</li>
+      <li><em>Instance.js</em> shows a graph, along with information about a particular instance of some class</li>
+      <li><em>LinkedInstancesTable.js</em> shows all the instances related to the instance currently inspected (this component is a child of <em>Instance.js</em>)</li>
+      <li><em>LinkedValuesTable.js</em> shows all the values related to the instance currently inspected (this component is a child of <em>Instance.js</em>)</li>
+      <li><em>InfoBar.js</em> shows additional information about a certain node of the graph when clicked on</li>
+      <li><em>Links.js</em></li>
+      </ul>
+      </li>
+      <li><strong>css</strong> contains some simple styling</li>
+      <li><strong>js</strong> contains constants we re-use in several places</li>
+      </ul>
+      </li>
+      </ul>
+
       <h4>SDK/collaboration opportunities for further development</h4>
 
       <h2>User Documentation</h2>
+      <h4>RDF Explorer - Bosch</h4>
+      <p>RDF explorer is an web-based graphical user interface using a REST-API which supports engineers to traverse huge RDF datasets. &lt;/br&gt;<br>
+      This tool is easy to use: to successfully uncover useful insights and traverse the database, engineers do not need to know anything about RDF or SPARQL queries. Our RDF explorer also has features that are absent from other similar tools.<br>
+      Our main features:</p>
+      <ol>
+      <li>
+      <p>Our tool supports filtering and search (with the help of search bars for example).</p>
+      </li>
+      <li>
+      <p>Our tool has a navigation system that enables someone to traverse a database in a straightforward way, without getting lost (with the use of breadcrumbs for example).</p>
+      </li>
+      <li>
+      <p>Our tool gives ways of visualizing data and instances in a meaningful way (with the help of graphs).</p>
+      </li>
+      <li>
+      <p>Our tool gives insights on how data, instances, classes, nodes, are related and connected.</p>
+      </li>
+      </ol>
+      <h4>Authors (group 26)</h4>
+      <ul>
+      <li>Anirudh Pillai</li>
+      <li>Aksel Cakmak</li>
+      <li>Xiaofeng Fu</li>
+      </ul>
+      <h4><a id="Getting_Started_20"></a>Getting Started</h4>
+      <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+      <h3><a id="Prerequisites_24"></a>Prerequisites</h3>
+      <p>What things you need to install the software and how to install them.<br>
+      To use this Web-App, you first <a href="https://www.google.com" title="Installing Node">need to have Node</a> on your system.</p>
+      <p>This tool can interface with any REST-API that implements some sort of RDF-graph. The URL of the API is <code>http://euve251515.serverprofi24.de:9090/rest-api-1.2/uclixn</code> for now. &lt;/br&gt;<br>
+      To use a different API, change the URL located in <code>client/js/constants.js</code>.</p>
+      <h3><a id="Installing_32"></a>Installing</h3>
+      <p>A step by step series of examples that tell you how to get a development env running.</p>
+      <p>First <code>git clone https://github.com/anirudhpillai/rdf-explorer</code> our project, then navigate to the <code>.../rdf-explorer/GUI</code> folder.</p>
+      <p>Then run <code>npm install</code> to install dependencies.</p>
+      <p>Then run <code>npm start</code> and open localhost:3000 in your browser.</p>
+      <p><em>NB:</em> It is important that you have the latest versions of <em>Node</em> and <em>npm</em> installed. You will get errors otherwise. You can check that with <code>npm -v</code> (version 3 or higher) and <code>node -v</code> (version 6 or higher).</p>
+      <h4><a id="DevelopmentContributingProject_Documentation_44"></a>Development/Contributing/Project Documentation</h4>
+      <p>Please read <em><a href="http://DEVELOPMENT.md">DEVELOPMENT.md</a></em> for details of how the code works and how to contribute.</p>
+      <h4><a id="Features_48"></a>Features:</h4>
+      <p>When first arriving on <code>localhost:3000</code>, you should see something like this:<br>
+      <img src="screenshots/Screen_ClassList.png" alt="image"><br>
+      The main page links to all the classes that exist in the RDF-database. you can sort them through regexpressions.</p>
+      <p>Clicking on a class brings you to a page showing you all its instances. Again, you can sort those instances through regex.<br>
+      <img src="screenshots/Screen_InstanceList.png" alt="image"></p>
+      <p>Clicking on an instance shows you additional information on it. Namely, you can see a graph showing all of that instance’s relations with classes, properties, and other instances.<br>
+      Clicking on such a node brings additional information.<br>
+      <img src="screenshots/Screen_InstanceGraph.png" alt="image"></p>
+      <p>Scrolling down, you can see two tables (that can be sorted and filtered), showing a list of all related instances and a list of all related values respectively.<br>
+      <img src="screenshots/Screen_InstanceTables.png" alt="image"></p>
+      <p>You can click on the breadcrumbs to go back to a previous state in the graph traversal.</p>
 
     </div>
 
