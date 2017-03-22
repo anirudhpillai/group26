@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Group 26</title>
+
+    <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+   <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
+
+   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+              <i class="material-icons">menu</i>
+            </a>
+            <a class="brand-logo center">Design</a>
+          </div>
+        </div>
+      </nav>
+      <ul id="slide-out" class="side-nav fixed">
+        <li>
+          <div class="userView">
+            <a href=""><h4>RDF Explorer</h4></a>
+          </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a href="../home.html">Home</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="requirements.html">Requirements</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="HCI.html">HCI</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="evaluation.html">Evaluation</a></li>
+        <li><a href="management.html">Management</a></li>
+        <li><div class="divider"></div></li>
+      </ul>
+    </header>
+
+    <div class="main text">
+
+      <h1>TODO</h1>
+      <p>
+        System architecture and a brief description of each
+component
+
+
+Hardware (if applicable)
+
+
+Class Diagram (if applicable)
+
+
+Design pattern (at least 5)
+
+
+Sequence Diagram (if applicable)
+
+
+Database structure(if applicable)
+
+
+ER Diagram
+
+
+Development tools: communication, file storage, UI design,
+version control, IDE
+
+
+Implementation details of Key functionalities
+
+
+Analytics (if applicable)
+      </p>
+
+      <h2>Design Patterns</h2>
+      <h4>Decorator Design Pattern</h4>
+      <p>
+        React has a feature called called Higher order components. You can write a function
+        which takes in a React component and returns a new React component with some new
+        functionalities and props attached to it.
+      </p>
+      <p>
+        This is very useful as it gives us control over what props we need to pass to the
+        component which is being decorated.
+      </p>
+      <h4>Dependency Injection</h4>
+
+
+      <h2>Architecture</h2>
+      <h4>React: Composition vs Inheritance</h4>
+      <p>
+        As React has a very powerful composition model, Facebook (creators of React)
+        recommend to use Composition over Inheritance to reuse code between components.
+      </p>
+
+      <p>
+        In our project we had two similar list views as two different components (InstanceList and ClassList).
+        There was a lot of similar code in both the components as both were basically just list view showing
+        different items. We initially thought of creating a abstract class for a List View but after reading
+        the React documentation and recommendations we decided to go for composition over inheritance.
+        <i>'Favour composition over inheritance'</i> &nbsp; is also a design principle in
+        Head First Design Patterns book.
+      </p>
+
+      <p>
+        So we used a separate Table component which had all the necessary code for the list view and then added
+        this table component in both of our list views. Hence, avoiding duplication and promoting code reuse.
+      </p>
+
+      <h2>References</h2>
+      <p>
+        https://facebook.github.io/react/docs/composition-vs-inheritance.html
+      </p>
+      <p>
+        Head First Design Patterns
+      </p>
+
+
+      <h2>Development: Workflow</h2>
+      <h4>Git Branching Model</h4>
+      <p>
+        We followed a really successfull git branching model. Whenever one of us
+        was working on a feature for the GUI, we would create a separate branch to work on it
+        and would them make a pull request when we thought the feature was ready. <br/>
+        Also, our pull requests cannot be merged without a review, so one other team member
+        would then check the new branch and then approve the changes to be merged into our
+        master branch. Below is a screenshot of one of our pull requests being inspected.
+      </p>
+
+      <img src="../img/approve_pull_request.png" class="responsive-img" alt="" />
+
+      <p>
+        The video below aims to show the network visualisation of our branching model.
+        You can clearly see the different features branches being merged into the master branch
+      </p>
+
+      <video width="100%" controls>
+        <source src="../videos/git_branch_network.mov" type="video/mp4">
+          Git Branches
+      </video>
+
+      <h2>Milestones</h2>
+      <p>
+        We tried to incrementally move forward while developing the GUI.
+        Now we aim to show you how the development actually progressed and videos of
+        the GUI at each stage.
+      </p>
+
+      <h4 class="space-top">Milestone 1: Visualisation and Replicate Stardog</h4>
+      <video width="100%" controls>
+        <source src="../videos/milestone1.mov" type="video/mp4">
+          Milestone 1
+      </video>
+      <p>
+        As you can see in the video above, we implemented a data visualisation
+        to show all connected instances and values.
+      </p>
+
+      <h3>Pull Requests:</h3>
+      <h5>Implemented Stardog (Anirudh)</h5>
+      <h5>Basic Visualisation (Anirudh)</h5>
+      <h5>Breadcrumbs (Anirudh)</h5>
+      <h5>Pagination (Aksel)</h5>
+
+
+      <h4 class="space-top">Milestone 2: Search Grouping and Instance View</h4>
+      <video width="100%" controls>
+        <source src="../videos/milestone2.mov" type="video/mp4">
+          Milestone 2
+      </video>
+
+      <p>
+        We added search for instances and classes and also tried to group
+        nodes in the visualisation according to properties.
+        We also did some load testing in which helped us figure that our search implemenation
+        was breaking when we simulated a million instances. We took note of this and in
+        the next milestone corrected it by changing our implementation to be able to
+        handle a million connected nodes.
+      </p>
+
+      <h3>Pull Requests:</h3>
+      <h5>Basic grouping (Anirudh)</h5>
+      <h5>Search (Aksel)</h5>
+      <h5>Showing Links (Anirudh)</h5>
+      <h5>Load Testing (Anirudh)</h5>
+
+      <h4 class="space-top">Milestone 3: Theme Filtering and Advance Search</h4>
+      <video width="100%" controls>
+        <source src="../videos/milestone3.mov" type="video/mp4">
+          Milestone 3
+      </video>
+      <p>
+        We changed our search implementation so that it work really fast even when
+        there are millions of rows of data. We also styled our GUI and added some advanced filtering
+        mechanisms. We also improved the page showing details of an instance (instance view) to show
+        all linked instances and values in table which allows the user to filter them.
+      </p>
+
+      <h3>Pull Requests:</h3>
+      <h5>Re-Engineered Search (Anirudh)</h5>
+      <h5>Instance View Tables (Anirudh)</h5>
+      <h5>Theme for GUI (Anirudh)</h5>
+      <h5>Filtering (Anirudh)</h5>
+    </div>
+
+    <footer>COMP204P - Systems Engineering - Group 26</footer>
+  </div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+        })
+      </script>
+    </body>
+</html>

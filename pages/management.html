@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Group 26</title>
+
+    <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+   <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
+
+   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+              <i class="material-icons">menu</i>
+            </a>
+            <a class="brand-logo center">Management</a>
+          </div>
+        </div>
+      </nav>
+      <ul id="slide-out" class="side-nav fixed">
+        <li>
+          <div class="userView">
+            <a href=""><h4>RDF Explorer</h4></a>
+          </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a href="../home.html">Home</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="requirements.html">Requirements</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="HCI.html">HCI</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="evaluation.html">Evaluation</a></li>
+        <li><a href="management.html">Management</a></li>
+        <li><div class="divider"></div></li>
+      </ul>
+    </header>
+
+    <div class="main text">
+
+      <h1>TODO</h1>
+      <p>
+        User manual
+
+
+Teach users how to use your application
+
+
+System manual
+
+
+Teach your client how to deploy your project after getting your code
+
+
+Feedback from your client
+
+
+Arrange a meeting to demonstrate your final prototype before April
+26 to your client to get his written feedback (e.g. email).
+
+
+Gantt Chart for term 1 and term 2
+
+
+Bi-weekly reports
+
+
+Meeting with your clients
+
+
+A table to include meeting date, meeting minutes, topic (1-2
+sentences)
+      </p>
+
+      <h2>System Manual</h2>
+
+      <h4><a id="Develop_and_Contribute_0"></a>Develop and Contribute</h4>
+      <p>This file helps you get up to date with the project by explaining how the code works, where to go to add/modify specific features etc…<br>
+      We assume the prerequisites are already met.<br>
+      Refer to <a href="http://README.md">README.md</a> to know how to have a local working copy of the project if not already.</p>
+      <h4><a id="Set_up_6"></a>Set up</h4>
+      <p>
+        1. Clone the Project<br/>
+        2. Run <code>npm install</code><br/>
+        3. The GUI currently fetches the data from the deployed API with the test database.<br/>
+        To change the URL for the API, go to <code>client/js/constants.js</code> and change the APIURL variable.<br/>
+        4. Run <code>npm start</code>, which will start the GUI on port 3000. To change the port, you can edit, <code>devServer.js</code>.<br />
+      </p>
+      <h4><a id="Bundling_13"></a>Bundling</h4>
+      <p>Install <code>webpack</code> globally using <code>sudo npm install -g webpack</code>.</p>
+      <p>Then run <code>sh build.sh</code> to create a dist folder and a <code>bundle.js</code> file which contains the transpiled<br>
+      React code.</p>
+      <h4><a id="Built_With_19"></a>Built With</h4>
+      <p>The main technologies used to build this are React and D3.js</p>
+      <h4><a id="Testing_22"></a>Testing</h4>
+      <p>Once you contributed, added or modified something, you can test your changes.<br>
+      The command <code>npm test</code> will run a test suite with <em>Jest</em>.</p>
+      <p><em>Note:</em> We use <a href="https://github.com/AllenFang/react-bootstrap-table">react-bootstrap-table</a> for our tables and our filter, that have been tested already.</p>
+      <h4><a id="Project_Structure_29"></a>Project Structure</h4>
+      <p>This is our project’s structure:</p>
+      <pre><code>├── build.sh
+      ├── devServer.js
+      ├── webpack.config.dev.js
+      ├── webpack.config.prod.js
+      ├── package.json
+      ├── node_modules
+      ├── test
+      |   └── load_test.py
+      └── client
+          ├── app.js
+          ├── css
+          |   └── style.css
+          ├── js
+          |   └── constants.js
+          └── components
+              ├── Main.js
+              ├── Header.js
+              ├── Breadcrumbs.js
+              ├── ClassList.js
+              ├── InstanceList.js
+              ├── Instance.js
+              ├── LinkedInstancesTable.js
+              ├── LinkedValuesTable.js
+              ├── InfoBar.js
+              └── Links.js
+      </code></pre>
+      <h4><a id="The_Source_Code_63"></a>The Source Code</h4>
+      <p>
+      <strong>build.sh</strong> is ran when building the project <br/>
+      <strong>devServer.js</strong> is the first file that runs when calling <code>npm start</code><br/>
+      <strong>webpack.config.dev.js</strong> and <strong>webpack.config.prod.js</strong> are fed to WebPack (when the app is in development or production respectively). They are configuration files.<br/>
+      <strong>package.json</strong> contains meta-data about our app. It includes a list of dependencies that are installed when running <code>npm install</code><br/>
+      <strong>node_modules</strong> contains all the dependencies and modules used by the App<br/>
+
+      <blockquote>
+        <h3>test/</h3>
+        <p>
+          <blockquote>
+            <p><i>load_test.py</i> creates a server at port 5000, with an arbitrary number of RDF entities (ie: a million), to perform load testing and see how our GUI reacts to huge datasets</p>
+          </blockquote>
+        </p>
+        <h3>client/</h3>
+        <blockquote>
+          <p>app.js</p>
+        <p><b>components/</b> contains all our React components</p>
+          <blockquote>
+            <p>Main.js</em> is the main component in which everything happens</p>
+            <p><em>Header.js</em> manages the header</p>
+            <p><em>Breadcrumbs.js</em> manages the breadcrumbs</p>
+            <p><em>ClassList.js</em> shows the list of all classes (it’s the first page that is shown)</p>
+            <p><em>InstanceList.js</em> shows the list of all instances of a certain class (when you click on a class in <em>ClassList.js</em> for example)</p>
+            <p><em>Instance.js</em> shows a graph, along with information about a particular instance of some class</p>
+            <p><em>LinkedInstancesTable.js</em> shows all the instances related to the instance currently inspected (this component is a child of <em>Instance.js</em>)</p>
+            <p><em>LinkedValuesTable.js</em> shows all the values related to the instance currently inspected (this component is a child of <em>Instance.js</em>)</p>
+            <p><em>InfoBar.js</em> shows additional information about a certain node of the graph when clicked on</p>
+            <p><em>Links.js</em></p>
+          </blockquote>
+        </blockquote>
+
+        <p><b>css/</b> contains some simple styling</p>
+        <p><b>js/</b> contains constants we re-use in several places</p>
+      </blockquote>
+
+      <h4>SDK collaboration opportunities for further development</h4>
+
+      <h2>User Documentation</h2>
+      <h4>RDF Explorer - Bosch</h4>
+      <p>RDF explorer is an web-based graphical user interface using a REST-API which supports engineers to traverse huge RDF datasets. &lt;/br&gt;<br>
+      This tool is easy to use: to successfully uncover useful insights and traverse the database, engineers do not need to know anything about RDF or SPARQL queries. Our RDF explorer also has features that are absent from other similar tools.<br>
+      Our main features:</p>
+      <ol>
+      <li>
+      <p>Our tool supports filtering and search (with the help of search bars for example).</p>
+      </li>
+      <li>
+      <p>Our tool has a navigation system that enables someone to traverse a database in a straightforward way, without getting lost (with the use of breadcrumbs for example).</p>
+      </li>
+      <li>
+      <p>Our tool gives ways of visualizing data and instances in a meaningful way (with the help of graphs).</p>
+      </li>
+      <li>
+      <p>Our tool gives insights on how data, instances, classes, nodes, are related and connected.</p>
+      </li>
+      </ol>
+
+
+      <h4>Authors (group 26)</h4>
+      <p>
+        Anirudh Pillai<br/>
+        Aksel Cakmak</br/>
+        Xiaofeng Fu</br>
+      </p>
+      <h4><a id="Getting_Started_20"></a>Getting Started</h4>
+      <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+      <h3><a id="Prerequisites_24"></a>Prerequisites</h3>
+      <p>What things you need to install the software and how to install them.<br>
+      To use this Web-App, you first <a href="https://www.google.com" title="Installing Node">need to have Node</a> on your system.</p>
+      <p>This tool can interface with any REST-API that implements some sort of RDF-graph. The URL of the API is <code>http://euve251515.serverprofi24.de:9090/rest-api-1.2/uclixn</code> for now. &lt;/br&gt;<br>
+      To use a different API, change the URL located in <code>client/js/constants.js</code>.</p>
+      <h3><a id="Installing_32"></a>Installing</h3>
+      <p>A step by step series of examples that tell you how to get a development env running.</p>
+      <p>First <code>git clone https://github.com/anirudhpillai/rdf-explorer</code> our project, then navigate to the <code>.../rdf-explorer/GUI</code> folder.</p>
+      <p>Then run <code>npm install</code> to install dependencies.</p>
+      <p>Then run <code>npm start</code> and open localhost:3000 in your browser.</p>
+      <p><em>NB:</em> It is important that you have the latest versions of <em>Node</em> and <em>npm</em> installed. You will get errors otherwise. You can check that with <code>npm -v</code> (version 3 or higher) and <code>node -v</code> (version 6 or higher).</p>
+      <h4><a id="DevelopmentContributingProject_Documentation_44"></a>Development/Contributing/Project Documentation</h4>
+      <p>Please read <em><a href="http://DEVELOPMENT.md">DEVELOPMENT.md</a></em> for details of how the code works and how to contribute.</p>
+      <h4><a id="Features_48"></a>Features:</h4>
+      <p>When first arriving on <code>localhost:3000</code>, you should see something like this:<br>
+      <img class="responsive-img" src="../img/Screen_ClassList.png" alt="image"><br>
+      The main page links to all the classes that exist in the RDF-database. you can sort them through regexpressions.</p>
+      <p>Clicking on a class brings you to a page showing you all its instances. Again, you can sort those instances through regex.<br>
+      <img class="responsive-img" src="../img/Screen_InstanceList.png" alt="image"></p>
+      <p>Clicking on an instance shows you additional information on it. Namely, you can see a graph showing all of that instance’s relations with classes, properties, and other instances.<br>
+      Clicking on such a node brings additional information.<br>
+      <img class="responsive-img" src="../img/Screen_InstanceGraph.png" alt="image"></p>
+      <p>Scrolling down, you can see two tables (that can be sorted and filtered), showing a list of all related instances and a list of all related values respectively.<br>
+      <img class="responsive-img" src="../img/Screen_InstanceTables.png" alt="image"></p>
+      <p>You can click on the breadcrumbs to go back to a previous state in the graph traversal.</p>
+
+
+      <h1>Term 2</h1>
+
+      <hr class="space-top" />
+
+      <h1>Term 1</h1>
+
+      <h2>Bi-weekly Reports</h2>
+      <h3><a href="../reports/bi_weekly_report_1.pdf">Bi-weekly Report 1</a></h3>
+      <h3><a href="../reports/bi_weekly_report_2.pdf">Bi-weekly Report 2</a></h3>
+      <h3><a href="../reports/bi_weekly_report_3.pdf">Bi-weekly Report 3</a></h3>
+      <h3><a href="../reports/bi_weekly_report_4.pdf">Bi-weekly Report 4</a></h3>
+
+      <h2>Links</h2>
+      <h3><a href="https://github.com/anirudhpillai/group26">Team Website Repository</a></h3>
+      <h3><a href="https://gitlab.cs.ucl.ac.uk/apillai/rdf-explorer">Project Repository</a></h3>
+
+      <h2>Plans for Term 2</h2>
+      <img src="../img/term2.png" alt="gannt chart" class="responsive-img"/>
+      <p class="text">
+        This Gantt chart shows how we hope the second term will be organised.
+        We should point that like any plan, this might be changed according to the needs of the moment.
+        This provides a framework of what we hope to do, for how long, and in what order.
+        The time units are arbitrary: They show how much time we predict we'll spend on each task proportionally.
+        This distinction is important: This doesn't tell us exactly how many weeks a task will take, but how long
+        it is compared to other tasks. We think this variation is more adapted to the nature of our project
+        because of the presence of several uncertainties (After how many iterations will we have something satisfiable?
+        How many unexpected hurdles will there be?). <br>
+        We will start by implementing our final prototype. We will organise the prototype into Redux and React components
+        and go on to implement them. We will follow a test driven approach and will integrate Circle CI to run our
+        tests whenever we push our code to the master branch.
+      </p>
+
+    </div>
+
+    <footer>COMP204P - Systems Engineering - Group 26</footer>
+  </div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+        })
+      </script>
+    </body>
+</html>
