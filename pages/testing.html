@@ -69,6 +69,37 @@
       </p>
 
       <h2>Load Testing</h2>
+      <p>
+        This was one of the most important type of testing we did. As our GUI was going to be used
+        with gigantic RDF graph databases in which one node can be connected to million other nodes,
+        we need our GUI to be responsive and to be able to handle such huge amount of data. This meant
+        our filtering tables should be able to handle data with over a million rows and still be quick
+        and responsive.
+      </p>
+      <p>
+        Initially in our first Milestone we just focused on creating the GUI. Later on in our second Milestone,
+        we actually wrote a Python load testing script, which can be found in <code>test/load_test.py</code>. This
+        load testing script is basically a Flask API which simulates a huge RDF graph database with a million
+        RDF classes each with a million RDF instances which were further connected to a million other RDF instances
+        and values.
+      </p>
+      <p>
+        In Milestone 2 we then used the load testing script to test our GUI against it and found out that
+        it became a bit slow and our instant search wasn't functioning. So in Milestone 3, we rethought our serach
+        and filtering architecture to handle these issues. We changed our filtering component
+        to a scalable table with built in pagination and filtering.
+        We removed instant serach and replace to handle the query after it had been completed. This drastically
+        improved the performance of our GUI.
+      </p>
+      <p>
+        So in the final version of our GUI, it is able to
+        handle such huge amounts of data with ease and is very quick and responsive as well. The video below
+        show our GUI working under the load testing script and easily handling millions of rows of data.
+      </p>
+
+      <p>
+        <i>Add Load Testing Video</i>
+      </p>
 
       <h2>Unit Testing, Integration Testing, Code Coverage</h2>
 
