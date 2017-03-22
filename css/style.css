@@ -6,14 +6,18 @@ nav {
   background: #3B2884;
 }
 
+.userView h4 {
+  color: #3B2884;
+  text-align: center;
+  font-size: 30px;
+}
+
 .space-top {
   margin-top: 60px;
   margin-bottom: 30px;
 }
 
-.userView h4 {
-  color: #3B2884;
-}
+
 
 footer {
   padding: 20px;
