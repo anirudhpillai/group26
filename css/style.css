@@ -117,3 +117,8 @@ h2 {
 .sm td {
   font-size: 13px;
 }
+
+.card .card-content .contrib {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
