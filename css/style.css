@@ -6,6 +6,11 @@ nav {
   background: #3B2884;
 }
 
+.feedback li {
+  list-style-type: circle;
+  font-size: 16px;
+}
+
 .userView h4 {
   color: #3B2884;
   text-align: center;
