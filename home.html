@@ -126,22 +126,46 @@ Role and main contribution to the project
         <h2>Features</h2>
         <h4>Graph Visualisation</h4>
         <p>
-          Our visualisation helps the user figure out..
+          Our visualisation gives the user a lot of information.
+          It shows the user which values and instances are connected to the current instance also
+          shows the property by which they are connected.
+          The visulisation is color coded to differentiate between values and instances.
+          It also groups instances and values which are connected using the same property.
+          This gives the user a really good idea about the characteristic of the current instance
+          at just one glance.
         </p>
 
         <h4>Breadcrumb Navigation</h4>
         <p>
-          Prevents the user from getting lost.
+          One of the chief requirements from our client was to figure out a way to prevent the user
+          from getting lost in the database. This is where the current graph database tools also fail at.
+          Graph databases can be huge and the user can navigate them endlessly and not know where he currently is.
+
+          Hence, to counter the problem we came up with our unique breadcrumbs. They show the initial class the user
+          started from, the first instance he visited and the instance linked from it. This gives the user his exact
+          location in the graph database. It also enables the user to quickly navigate the interface.
         </p>
 
-        <h4>Regex Search</h4>
+        <h4>Regex Search and Filtering</h4>
         <p>
-          Helps
+          This is one of those features we came up with during one of our brainstorming sessions.
+          We asked ourselves 'How can a GUI for graph databases borrow ideas from a normal GUI for
+          a relational database?'. This makes it really quick and easy for the user to find the exact
+          instance he is looking for or to filter the types of instance from a connected instance.
         </p>
 
-        <h4>Filtering</h4>
+        <h4>Statistics</h4>
         <p>
-          Helps the user find all properties ...
+          Our GUI also shows statistics about the instance a user is viewing. It can group the linked
+          instances by property to give the user an idea about which classes of instances the current instance
+          is connected to.
+        </p>
+
+        <h4>Load Tested</h4>
+        <p>
+          Our GUI will can handle graph databases with millions of datapoints each of which are connected
+          millions of other data points. We worked really hard on making the GUI slick and responsive even
+          when handling such large amounts of data.
         </p>
 
         <h2> Our Team </h2>
