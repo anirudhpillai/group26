@@ -89,13 +89,24 @@
       We are very happy with all we've been able to implement. We satisified all the key requirements of our clients (the "MUST" part of <a href= "requirements.html#final_requirements"> the MOSCOW requirements </a>), we also implement all the "SHOULD" and some of the "COULD" functions. <br />
       Our clients were also satisfied with the project, although they thought that with more time, we could have done a lot more, and our app could have been even more interesting.
 
-      As for the functionality of our web application, we were quite satisfied with what we were able to implement so far. We were able to implement features that satisfied all of our key requirements and also some additional requirements. Our client also expressed her satisfaction with the functionalities during our user acceptance tests. However, there were certain functionalities that could have been improved given more time such as maybe including a chat system for mentors and mentees to communicate with each other.
-
       <h2>Compatibility</h2>
+
+      Our application runs on any modern browser. It is compatible with some old browsers thanks to polyfills and Babel, but it has not been made with that in mind, because the end users are developers and engineers, and we make the assumption that their tools are reasonably modern and up-to-date (we assume that for example, they don't use old versions of Internet Explorer and such).
 
       <h2>Evaluation of Testing</h2>
 
+      Testing was a key driver of our project and one of the main points we came accross and discussed when making decisions about our tech stack and our architecture.
+      We extensively Unit-Tested each one of our components with Jest.
+      We ensured that our build never failed, by employing Integration Testing with CircleCI.
+      Finally, we ensured that new commits never broke anything by running pre-commit scripts with NodeJS (so that if your modifications didn't pass a test, you couldn't commit).
+
+
       <h2>Project Management</h2>
+
+      We used Github for version control and collaborating (We shared that repository with the clients). We communicated with clients via Skype, with regular updates, action on feedback, and suggestions from them. This was key in our project management: depending on the client feedback for our current direction, we changed focus, modified features, or added new ones.
+      Communication between ourselves was done in person (via regualr group meetings), Slack, and Facebook Messenger.
+      Task management was done via putting up a stack of tasks to be done, each with its own category and importance, and a person assigned to it. We used Trello for that.
+      Finally, we used Google Drive to share ressources for our <a href= "management.html#reports"> reports </a>, our presentation slides, our documentation and more.
 
 
       <h1>Future Work</h1>
