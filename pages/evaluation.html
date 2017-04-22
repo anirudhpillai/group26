@@ -56,70 +56,96 @@
 
     <div class="main text">
 
-      <h1>Summary of achievements</h1>
+      <h2>Summary of achievements</h2>
 
-      <h2>Requested functional requirements and contributors</h2>
+      <h4>Requested functional requirements and contributors</h4>
       <img src="../img/final_req.png" alt="our final requirements" class="responsive-img" />
 
-      <h2>Challenges</h2>
+      <h4>Challenges</h4>
       <img src="../img/challenges.png" alt="challenges we faced" class="responsive-img" />
 
-      <h2>Incomplete features and bugs</h2>
-      We did everything we were set to do (i.e.: everything in the "MUST" section).
-      We don't know of any bugs (we tested all our components, though we tested them thorougly, we may have missed some edge cases)
+      <h4>Incomplete features and bugs</h4>
+      <p>
+          We did everything we were set to do (i.e.: everything in the "MUST" section).
+          We don't know of any bugs (we tested all our components, though we tested them thorougly, we may have missed some edge cases)
+      </p>
 
 
 
-      <h1>Critical Evaluation</h1>
+      <h2>Critical Evaluation</h2>
 
-      <h2>Architecture Design</h2>
+      <h4>Architecture Design</h4>
 
-      We are happy with the architecture design of our application. We tried to decouple everything as much as we so as to reduce dependencies and enable us to work on the project in parallel. <br />
-      Our choice of frameworks and libraries (that had a huge influence on our architecture) was done following some guidelines: <br />
-      How easy is it to get information and help (is there a wide community, ressources..) ?
-      Can we build an application following important patterns (e.g.: decoupling our components, making unit tests easier, ect..) ? <br />
-
-
-      <h2>User Interface design and user experience</h2>
-
-      We designed our app with the user in mind. We built our components to be as helpful and natural to use as possible. No fancy wheels or carousels etc.. We built elements with ease of use, understandability, and value proposition in mind. The user interactions are straightforward, with HCI principles in mind all along the way (For more information on how we focused on HCI throughout the app, visit <a href= "HCI.html"> this page </a>).
-
-      <h2>Functionality</h2>
-
-      We are very happy with all we've been able to implement. We satisified all the key requirements of our clients (the "MUST" part of <a href= "requirements.html#final_requirements"> the MOSCOW requirements </a>), we also implement all the "SHOULD" and some of the "COULD" functions. <br />
-      Our clients were also satisfied with the project, although they thought that with more time, we could have done a lot more, and our app could have been even more interesting.
-
-      <h2>Compatibility</h2>
-
-      Our application runs on any modern browser. It is compatible with some old browsers thanks to polyfills and Babel, but it has not been made with that in mind, because the end users are developers and engineers, and we make the assumption that their tools are reasonably modern and up-to-date (we assume that for example, they don't use old versions of Internet Explorer and such).
-
-      <h2>Evaluation of Testing</h2>
-
-      Testing was a key driver of our project and one of the main points we came accross and discussed when making decisions about our tech stack and our architecture.
-      We extensively Unit-Tested each one of our components with Jest.
-      We ensured that our build never failed, by employing Integration Testing with CircleCI.
-      Finally, we ensured that new commits never broke anything by running pre-commit scripts with NodeJS (so that if your modifications didn't pass a test, you couldn't commit).
+      <p>
+          We are happy with the architecture design of our application. We tried to decouple everything as much as we so as to reduce dependencies and enable us to work on the project in parallel. <br />
+          Our choice of frameworks and libraries (that had a huge influence on our architecture) was done following some guidelines: <br />
+          How easy is it to get information and help (is there a wide community, ressources..) ?
+          Can we build an application following important patterns (e.g.: decoupling our components, making unit tests easier, ect..) ? <br />
+      </p>
 
 
-      <h2>Project Management</h2>
 
-      We used Github for version control and collaborating (We shared that repository with the clients). We communicated with clients via Skype, with regular updates, action on feedback, and suggestions from them. This was key in our project management: depending on the client feedback for our current direction, we changed focus, modified features, or added new ones.
-      Communication between ourselves was done in person (via regualr group meetings), Slack, and Facebook Messenger.
-      Task management was done via putting up a stack of tasks to be done, each with its own category and importance, and a person assigned to it. We used Trello for that.
-      Finally, we used Google Drive to share ressources for our <a href= "management.html#reports"> reports </a>, our presentation slides, our documentation and more.
+      <h4>User Interface design and user experience</h4>
+
+      <p>
+          We designed our app with the user in mind. We built our components to be as helpful and natural to use as possible. No fancy wheels or carousels etc.. We built elements with ease of use, understandability, and value proposition in mind. The user interactions are straightforward, with HCI principles in mind all along the way (For more information on how we focused on HCI throughout the app, visit <a href= "HCI.html"> this page </a>).
+      </p>
+
+      <h4>Functionality</h4>
+
+      <p>
+          We are very happy with all we've been able to implement. We satisified all the key requirements of our clients (the "MUST" part of <a href= "requirements.html#final_requirements"> the MOSCOW requirements </a>), we also implement all the "SHOULD" and some of the "COULD" functions. <br />
+          Our clients were also satisfied with the project, although they thought that with more time, we could have done a lot more, and our app could have been even more interesting.
+      </p>
 
 
-      <h1>Future Work</h1>
 
-      Given another 6 months, we could have done a lot more. We designed our app with the long term in mind: Instead of doing more buggy features, we focused on doing less of them, but with less bug. We also designed our architecture so that adding new features is easy and doesn't require lots of modifications on existing components.
-      With that aside, if we had more time, we could have done the following:
-      <ul>
-          <li>Providing more exhaustive statistical information about individual nodes and the graph as a whole </li>
-          <li>Evaluating the UX and improving on the usability based on actual user feedback </li>
-          <li>Making graphical elements more configurable </li>
-          <li>Providing write access beyond the current read-only implementation </li>
-          <li>Offering predictive functionalities, such as user-identity based recommendation, general link prediction </li>
-      </ul>
+      <h4>Compatibility</h4>
+
+      <p>
+          Our application runs on any modern browser. It is compatible with some old browsers thanks to polyfills and Babel, but it has not been made with that in mind, because the end users are developers and engineers, and we make the assumption that their tools are reasonably modern and up-to-date (we assume that for example, they don't use old versions of Internet Explorer and such).
+      </p>
+
+
+
+      <h4>Evaluation of Testing</h4>
+
+      <p>
+          Testing was a key driver of our project and one of the main points we came accross and discussed when making decisions about our tech stack and our architecture. <br />
+          We extensively Unit-Tested each one of our components with Jest. <br />
+          We ensured that our build never failed, by employing Integration Testing with CircleCI.
+          Finally, we ensured that new commits never broke anything by running pre-commit scripts with NodeJS (so that if your modifications didn't pass a test, you couldn't commit).
+      </p>
+
+
+      <h4>Project Management</h4>
+
+      <p>
+          We used Github for version control and collaborating (We shared that repository with the clients). We communicated with clients via Skype, with regular updates, action on feedback, and suggestions from them. This was key in our project management: depending on the client feedback for our current direction, we changed focus, modified features, or added new ones.
+          Communication between ourselves was done in person (via regualr group meetings), Slack, and Facebook Messenger. <br />
+          Task management was done via putting up a stack of tasks to be done, each with its own category and importance, and a person assigned to it. We used Trello for that. <br />
+          Finally, we used Google Drive to share ressources for our <a href= "management.html#reports"> reports </a>, our presentation slides, our documentation and more.
+      </p>
+
+
+
+      <h2>Future Work</h2>
+
+      <p>
+          Given another 6 months, we could have done a lot more. We designed our app with the long term in mind: Instead of doing more buggy features, we focused on doing less of them, but with less bug. We also designed our architecture so that adding new features is easy and doesn't require lots of modifications on existing components. <br />
+          With that aside, if we had more time, we could have done the following:
+      </p>
+
+      <p>
+          <ul class="collection">
+              <li class="collection-item">Providing more exhaustive statistical information about individual nodes and the graph as a whole </li>
+              <li class="collection-item">Evaluating the UX and improving on the usability based on actual user feedback </li>
+              <li class="collection-item">Making graphical elements more configurable </li>
+              <li class="collection-item">Providing write access beyond the current read-only implementation </li>
+              <li class="collection-item">Offering predictive functionalities, such as user-identity based recommendation, general link prediction </li>
+          </ul>
+      </p>
+
 
     </div>
 
