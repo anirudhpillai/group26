@@ -55,24 +55,85 @@
 
     <div class="main text">
 
-      <h1>TODO</h1>
+      <h2>Design Patterns</h2>
+      <h4>Adapter</h4>
       <p>
-
-Design pattern (at least 5)
+        Implementing our data visualisation was one of the hardest tasks on the project.
+        This is because of the difficutly in getting D3.js (data visualisation
+        library we were using) to work with React. D3.js works by creating a lot of
+        DOM nodes for the graph and then doing calculations to place the nodes at
+        the right place. But, React uses a virtual DOM to render components. Thus, D3.js
+        can't really move elements on the DOM if the DOM doesn't exist.
+        <br><br>
+        So we had to write an Adapter to make D3.js work in React and successfully implement
+        our data visualisation. We dug into the React source code to find some methods that
+        the we needed and then we wrote our Graph Component. We used an adapter in between
+        the D3.js which we put in the Graph component. The way the adapter worked was
+        by first letting the entire React rendring process to complete and then after
+        running the D3.js code from inside our Graph component.
+        <br><br>
+        This worked perfectly and our data visualisation works flawlessly because of this.
       </p>
 
-      <h2>Design Patterns</h2>
+      <h4>Dependency Injection</h4>
+      <p>
+        Dependency Injection helps implement Inversion of Control. React allows us to use
+        dependency injection by passing props to a component. We use it extensively through out
+        app expecially in all our filtering tables. Instead of having to fetch the data by
+        calling the API again and again, we make the parent components pass the data
+        about instances (the dependency) to the child component throught props.
+        Even in our Graph component, instead of having to call the API to update the component
+        information, we just pass it the updated information from the Instance component which
+        has already fetched the updated information.
+      </p>
+
+      <h4>Command</h4>
+      <p>
+        The render() method in React is synonymous to the execute() method in the Command pattern.
+        Every React Component has a render() method and that's the only method which is required for
+        a method to be displayed on the DOM.
+        <br><br>
+        This is used internally in React everywhere. So whenever the props of a component change, it knows
+        it only needs to call the render() method to update the component on the page. This powerful
+        abstraction also allows the component to be changed easily as the calling function only
+        needs to know to call the render() method (which every component has) without needing
+        to know anything else about the calling component.
+      </p>
+
+      <h4>Observer</h4>
+      <p>
+        The observer pattern is used extensively in React where the props of an object are
+        passed around.
+        One place where this happens is when the props of a child component change, not only does
+        the child component re-render but also the parent components reder method is called again.
+        <br><br>
+        We use this feature extensively, especially in our Graph component for the datavisualisation.
+        When ever the current viewing instance changes, the graph method automatically re-renders to show
+        the visualisation for the new instance. The signal to re render the graph component comes from
+        the change in its props where the original JSON containing the nodes and links is replance with new
+        JSON which has nodes and links for the new instance.
+      </p>
+
       <h4>Decorator Design Pattern</h4>
       <p>
         React has a feature called called Higher order components. You can write a function
         which takes in a React component and returns a new React component with some new
         functionalities and props attached to it.
-      </p>
-      <p>
+        <br><br>
         This is very useful as it gives us control over what props we need to pass to the
-        component which is being decorated.
+        component which is being decorated. We use this in our Main component to make it
+        comply with React Router and handle our Routing mechanism. We also use this to
+        implement advace filtering capabilities in our filtering table.
       </p>
-      <h4>Dependency Injection</h4>
+
+      <h4>Component Based Architecture</h4>
+      <p>
+        React can easily be called held responsible for ending the use of MVC on the
+        front-end. We make heavy use of components in React. <br>
+        Component = Views + Event Handling + UI State <br>
+        So each component manages its own state and event handling, thus, obviating
+        the need for MVC and providing a much better separation of concerns.
+      </p>
 
 
       <h2>Architecture</h2>
