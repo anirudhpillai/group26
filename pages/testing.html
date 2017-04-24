@@ -67,8 +67,20 @@
 
       <h2>Unit Testing, Integration Testing, Code Coverage</h2>
       <p>
-          We used Jest for our Unit tests. We tested each component extensively and seperatly. Every time someone wants to contribute code, a pre-commit script is run (with Node) to see if the new code passes all the unit tests. Only then can the safe code be pushed to git. To see how good our coverage was, we used Jest's --coverage option. </br>
-          We chose Jest because it's simple to use, isntall, and integrate to a project. The community is big enough and support is available easily. It also has good add-ons to support separate React elements testing. This proved to be very useful.
+        We used Jest for our Unit tests. We tested each component extensively and seperatly. Every time someone wants to contribute code, a pre-commit script is run (with Node) to see if the new code passes all the unit tests. Only then can the safe code be pushed to git. To see how good our coverage was, we used Jest's --coverage option. </br>
+        <div>
+          <img src="../img/test_fail.png" alt="a failed test run" class="responsive-img" />
+          <p> Here, you can see that the test suite failed. This means that the code this person is trying to push won't be accepted. </p>
+        </div>
+
+        <div>
+          <img src="../img/test_success.png" alt="a successful test run" class="responsive-img" />
+          <p> Here, the necessary modifications have been made. All the tests in the test suite passed. This code can be pushed safely.</p>
+        </div>
+
+        Some features of our project coming from libraries have already been extensively tested. That is why our suites focused on not duplicating such tests: we only our tested new functionality.
+
+        We chose Jest because it's simple to use, isntall, and integrate to a project. The community is big enough and support is available easily. It also has good add-ons to support separate React elements testing. This proved to be very useful.
       </p>
 
       <h2>Load Testing</h2>
